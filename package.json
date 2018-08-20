@@ -1,0 +1,30 @@
+{
+  "name": "frontend-backend-server-team",
+  "version": "1.0.0",
+  "description": "server team project",
+  "main": "index.js",
+  "author": {
+    "name": "Server Team",
+    "email": "dl-wl-mcc-server@worldline.com"
+  },
+  "contributors": [
+    "Jordi Escudero Subirana",
+    "Juan Belmonte Rodriguez",
+    "Eric Alvarez Chinchilla",
+    "Cristina Figueres Nuñez",
+    "Ana Avilés Herrero",
+    "Adrian Borrego Martinez",
+    "Jose Luis Pleguezuelos Aguilera",
+    "Dani Bautista Miralles",
+    "Alberto Iglesias Gonzalo",
+    "Xavier Cases Camats",
+    "Jairo Costa ???",
+    "Raul Fernandez Garcia",
+    "Antonio Finana Sanchez",
+    "Carla Martinez Nunez",
+    "Killian Perea Ruiz",
+    "Alejandro Verbo Macias",
+    "Alejandro Rivas Moreira"
+  ],
+  "license": "MIT"
+}
