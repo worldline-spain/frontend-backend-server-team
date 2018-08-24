@@ -2,41 +2,46 @@
     <mat-toolbar color="primary">
         <mat-toolbar-row>
             <span class="logo">
-                <img src="../assets/icon-body.png" />
+                <img src="assets/icon-body2.png" />
             </span>
             <span class="spacer"></span>
             <!-- <span>WORLDLINE SERVER TEAM</span> -->
             <span class="spacer"></span>
-            <mat-icon class="icon">business</mat-icon>
-            <mat-icon class="icon">clear_all</mat-icon>
+            <!-- <mat-icon class="icon">business</mat-icon>
+            <mat-icon class="icon">clear_all</mat-icon> -->
         </mat-toolbar-row>
     </mat-toolbar>
     <div class="team-banner"></div>
-    <div class="team" fxLayout="row wrap" fxLayout.xs="column">
+    <div class="team" fxLayout="row wrap" fxLayout.xs="column" inViewport [debounce]="0">
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
             <div class="avatar"></div>
             <div class="name">1</div>
             <div class="job-position">JOB_POSITION</div>
+            <mat-icon class="icon">clear_all</mat-icon>
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
             <div class="avatar"></div>
             <div class="name">2</div>
             <div class="job-position">JOB_POSITION</div>
+            <mat-icon class="icon">clear_all</mat-icon>
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
             <div mat-card-avatar class="avatar"></div>
             <div class="name">3</div>
             <div class="job-position">JOB_POSITION</div>
+            <mat-icon class="icon">clear_all</mat-icon>
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
             <div class="avatar"></div>
             <div class="name">4</div>
             <div class="job-position">JOB_POSITION</div>
+            <mat-icon class="icon">clear_all</mat-icon>
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
             <div class="avatar"></div>
             <div class="name">5</div>
             <div class="job-position">JOB_POSITION</div>
+            <mat-icon class="icon">clear_all</mat-icon>
         </div>
     </div>
     

@@ -1,6 +1,6 @@
 .mat-toolbar {
-    background: rgba(255, 255, 255, 0.8);
-    color: #0066a1;
+    color: rgba(255, 255, 255, 1);
+    background-color: #0066a1;
     position: fixed;
     z-index: 2;
 }
@@ -18,7 +18,7 @@
 }
   
 .spacer {
-        flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 /****** HOME *******/
@@ -33,13 +33,29 @@
 .team {
     padding: 84px 20px 20px;
 }
+@keyframes inside {
+    from {
+        opacity:0;
+        transform:translateY(-100%);
+        
+    }
+    75%  {opacity:0.1;}
+    to {
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+.team.in-viewport {
+    animation: inside 400ms ease-out 1 
+}
 
 .member {
     padding: 10px 20px;
 }
 
 .member .avatar {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-image: url('https://www.w3schools.com/w3css/img_avatar3.png');
     background-size: cover;
     align-self: center;
     border-radius: 50%;
@@ -53,3 +69,8 @@
     text-align: center;
 }
 
+@media (max-width:599px){
+    .logo > img {
+        height: 40px;
+      }
+}

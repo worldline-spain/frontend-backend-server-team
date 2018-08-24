@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { angularMaterialModule } from './modules/angularMaterial/angularMaterial.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { InViewportModule } from 'angular-inviewport';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     BrowserModule,
     angularMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    InViewportModule
   ],
   providers: [],
   bootstrap: [AppComponent]
