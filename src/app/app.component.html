@@ -9,40 +9,157 @@
             <span class="spacer"></span>
             <!-- <mat-icon class="icon">business</mat-icon>
             <mat-icon class="icon">clear_all</mat-icon> -->
+            <div class="references" fxLayout="row wrap" fxLayoutAlign="center center" fxShow="false" fxShow.gt-sm="true">
+                <a href="#about-us" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">About Us</a>
+                <a href="#team" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Our team</a>
+                <a href="#tecnologies" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Tecnologies</a>
+                <a href="#contact" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Contact</a>
+            </div>
+            <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxShow.gt-sm="false">
+                <mat-icon class="icon">clear_all</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item><a href="#about-us">About us</a></button>
+                <button mat-menu-item><a href="#team">Team</a></button>
+                <button mat-menu-item><a href="#tecnologies">Tecnologies</a></button>
+                <button mat-menu-item><a href="#contact">Contact</a></button>
+            </mat-menu>
         </mat-toolbar-row>
     </mat-toolbar>
-    <div class="team-banner"></div>
-    <div class="team" fxLayout="row wrap" fxLayout.xs="column" inViewport [debounce]="0">
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
-            <div class="avatar"></div>
-            <div class="name">1</div>
-            <div class="job-position">JOB_POSITION</div>
-            <mat-icon class="icon">clear_all</mat-icon>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
-            <div class="avatar"></div>
-            <div class="name">2</div>
-            <div class="job-position">JOB_POSITION</div>
-            <mat-icon class="icon">clear_all</mat-icon>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
-            <div mat-card-avatar class="avatar"></div>
-            <div class="name">3</div>
-            <div class="job-position">JOB_POSITION</div>
-            <mat-icon class="icon">clear_all</mat-icon>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
-            <div class="avatar"></div>
-            <div class="name">4</div>
-            <div class="job-position">JOB_POSITION</div>
-            <mat-icon class="icon">clear_all</mat-icon>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
-            <div class="avatar"></div>
-            <div class="name">5</div>
-            <div class="job-position">JOB_POSITION</div>
-            <mat-icon class="icon">clear_all</mat-icon>
+    <div id="about-us" class="about-us" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
+        <div class="about-us-member" fxFlex="100%" fxFlex.gt-sm="90%" fxFlex.gt-xs="80%" fxLayout="column" fxLayoutAlign="center center">
+            <div class="about-us-name">what we do / about us</div>
+            <div class="about-us-image"></div>
+            <p class="description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus, non molestie ex varius. Duis
+                imperdiet odio urna, vitae dictum lorem tristique non. Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. Cras faucibus tempor metus sit amet tristique. Sed aliquet ut
+                dui quis pharetra. Donec blandit laoreet gravida. Aliquam a suscipit enim. Nam vehicula sed erat sit amet
+                auctor. In at rhoncus enim. Donec lacinia vestibulum orci in egestas. Phasellus id lacinia elit. Vivamus
+                eleifend faucibus interdum. Donec viverra elementum odio, sed rutrum ante aliquam at. Ut dolor diam, semper
+                nec ligula nec, iaculis finibus dolor. Mauris placerat ut felis vel pretium. Aenean tincidunt feugiat ex,
+                ac iaculis ipsum ullamcorper a. Duis a lacus non dolor fermentum consectetur quis vel lorem. Fusce fringilla
+                neque sit amet auctor porta. Duis eleifend pretium velit, sit amet posuere dolor interdum vitae. Donec aliquet
+                arcu at leo rhoncus dignissim. Proin sed risus egestas, venenatis libero ut, elementum est. Vivamus feugiat
+                blandit tortor, porta efficitur mauris maximus semper. Nunc interdum nisl augue, quis tincidunt sem ultrices
+                fermentum.
+            </p>
         </div>
     </div>
-    
+    <div id="team" class="team" fxLayout="row wrap" fxLayout.xs="column">
+        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
+            [debounce]="0">
+            <div class="avatar"></div>
+            <div class="name">Name 1</div>
+            <div class="job-position">JOB_POSITION</div>
+            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
+                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+                hendrerit rhoncus. </p>
+            <div class="icon-list">
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
+            [debounce]="0">
+            <div class="avatar"></div>
+            <div class="name">Name 2</div>
+            <div class="job-position">JOB_POSITION</div>
+            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
+                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+                hendrerit rhoncus. </p>
+            <div class="icon-list">
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
+            [debounce]="0">
+            <div mat-card-avatar class="avatar"></div>
+            <div class="name">Name 3</div>
+            <div class="job-position">JOB_POSITION</div>
+            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
+                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+                hendrerit rhoncus. </p>
+            <div class="icon-list">
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
+            [debounce]="0">
+            <div class="avatar"></div>
+            <div class="name">Name 4</div>
+            <div class="job-position">JOB_POSITION</div>
+            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
+                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+                hendrerit rhoncus. </p>
+            <div class="icon-list">
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
+            [debounce]="0">
+            <div class="avatar"></div>
+            <div class="name">Name 5</div>
+            <div class="job-position">JOB_POSITION</div>
+            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
+                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+                hendrerit rhoncus. </p>
+            <div class="icon-list">
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+                <button mat-button>
+                    <mat-icon class="icon">clear_all</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
