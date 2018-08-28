@@ -91,8 +91,7 @@
     padding: 10px 20px;
 }
 
-.member .avatar {
-    background-image: url('https://www.w3schools.com/w3css/img_avatar3.png');
+.member .avatar{
     background-size: cover;
     align-self: center;
     border-radius: 50%;
@@ -117,6 +116,11 @@
     font-weight: bold;
     text-align: justify;
 }
+.about-description{
+    padding:0 8%;
+    font-weight: bold;
+    text-align: left;
+}
 
 .icon-list{
     margin-top:10px;
@@ -132,17 +136,40 @@
       }
 }
 
-a {
-  color: white;
-  padding: 0px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-a:hover {
-  background-color: #003f63d7;
+.section{
+    width:100%;
+    height: 5rem;
 }
 
-a:active {
-  background-color: #003f63d7;
+.tecnologies{
+    background-color:#3266a1;
 }
 
+.references{
+    height:100%;
+}
+.header-button-notclicked{
+    color: white;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:100%;
+}
+
+.header-button-clicked{
+    color: white;
+    font-weight: bold;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:100%;
+    background-color: #003f63d7;
+}
+
+.menu-button{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #0066a1d7;
+}

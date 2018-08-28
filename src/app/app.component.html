@@ -2,7 +2,7 @@
     <mat-toolbar color="primary">
         <mat-toolbar-row>
             <span class="logo">
-                <img src="assets/icon-body2.png" />
+                <img src="assets/icon-body.png" />
             </span>
             <span class="spacer"></span>
             <!-- <span>WORLDLINE SERVER TEAM</span> -->
@@ -10,27 +10,27 @@
             <!-- <mat-icon class="icon">business</mat-icon>
             <mat-icon class="icon">clear_all</mat-icon> -->
             <div class="references" fxLayout="row wrap" fxLayoutAlign="center center" fxShow="false" fxShow.gt-sm="true">
-                <a href="#about-us" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">About Us</a>
-                <a href="#team" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Our team</a>
-                <a href="#tecnologies" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Tecnologies</a>
-                <a href="#contact" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Contact</a>
+                <button mat-button (click)="onMenuClick(0)"[ngClass]="selectedIndex === 0 ? 'header-button-clicked' : 'header-button-notclicked'" [ngx-scroll-to]="'#about-us'" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">About us</button>
+                <button mat-button (click)="onMenuClick(1)"[ngClass]="selectedIndex === 1 ? 'header-button-clicked' : 'header-button-notclicked'" [ngx-scroll-to]="'#team'" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Our team</button>
+                <button mat-button (click)="onMenuClick(2)"[ngClass]="selectedIndex === 2 ? 'header-button-clicked' : 'header-button-notclicked'" [ngx-scroll-to]="'#tecnologies'" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Tecnologies</button>
+                <button mat-button (click)="onMenuClick(3)"[ngClass]="selectedIndex === 3 ? 'header-button-clicked' : 'header-button-notclicked'" [ngx-scroll-to]="'#contact'" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Contact</button>
             </div>
             <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxShow.gt-sm="false">
                 <mat-icon class="icon">clear_all</mat-icon>
             </button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item><a href="#about-us">About us</a></button>
-                <button mat-menu-item><a href="#team">Team</a></button>
-                <button mat-menu-item><a href="#tecnologies">Tecnologies</a></button>
-                <button mat-menu-item><a href="#contact">Contact</a></button>
+            <mat-menu #menu="matMenu" style="background-color: #0066a1d7;">
+                <button mat-menu-item class="menu-button" [ngx-scroll-to]="'#about-us'">About us</button>
+                <button mat-menu-item class="menu-button" [ngx-scroll-to]="'#team'">Team</button>
+                <button mat-menu-item class="menu-button" [ngx-scroll-to]="'#tecnologies'">Tecnologies</button>
+                <button mat-menu-item class="menu-button" [ngx-scroll-to]="'#contact'">Contact</button>
             </mat-menu>
         </mat-toolbar-row>
     </mat-toolbar>
-    <div id="about-us" class="about-us" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
+    <div id="about-us" class="about-us" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center" inViewport (onInViewportChange)="onViewportChange($event,0)">
         <div class="about-us-member" fxFlex="100%" fxFlex.gt-sm="90%" fxFlex.gt-xs="80%" fxLayout="column" fxLayoutAlign="center center">
             <div class="about-us-name">what we do / about us</div>
             <div class="about-us-image"></div>
-            <p class="description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus, non molestie ex varius. Duis
+            <p class="about-description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus, non molestie ex varius. Duis
                 imperdiet odio urna, vitae dictum lorem tristique non. Pellentesque habitant morbi tristique senectus et
                 netus et malesuada fames ac turpis egestas. Cras faucibus tempor metus sit amet tristique. Sed aliquet ut
                 dui quis pharetra. Donec blandit laoreet gravida. Aliquam a suscipit enim. Nam vehicula sed erat sit amet
@@ -45,10 +45,10 @@
             </p>
         </div>
     </div>
-    <div id="team" class="team" fxLayout="row wrap" fxLayout.xs="column">
+    <div id="team" class="team" fxLayout="row wrap" fxLayout.xs="column"inViewport (onInViewportChange)="onViewportChange($event,1)">
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
             [debounce]="0">
-            <div class="avatar"></div>
+            <div class="avatar" [ngStyle]="{'background-image': backImage[0]}"></div>
             <div class="name">Name 1</div>
             <div class="job-position">JOB_POSITION</div>
             <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
@@ -71,7 +71,7 @@
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
             [debounce]="0">
-            <div class="avatar"></div>
+            <div class="avatar" [ngStyle]="{'background-image': backImage[1]}"></div>
             <div class="name">Name 2</div>
             <div class="job-position">JOB_POSITION</div>
             <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
@@ -94,7 +94,7 @@
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
             [debounce]="0">
-            <div mat-card-avatar class="avatar"></div>
+            <div mat-card-avatar class="avatar" [ngStyle]="{'background-image': backImage[2]}"></div>
             <div class="name">Name 3</div>
             <div class="job-position">JOB_POSITION</div>
             <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
@@ -117,7 +117,7 @@
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
             [debounce]="0">
-            <div class="avatar"></div>
+            <div class="avatar" [ngStyle]="{'background-image': backImage[3]}"></div>
             <div class="name">Name 4</div>
             <div class="job-position">JOB_POSITION</div>
             <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
@@ -140,7 +140,7 @@
         </div>
         <div class="member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
             [debounce]="0">
-            <div class="avatar"></div>
+            <div class="avatar" [ngStyle]="{'background-image': backImage[4]}"></div>
             <div class="name">Name 5</div>
             <div class="job-position">JOB_POSITION</div>
             <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
@@ -160,6 +160,15 @@
                     <mat-icon class="icon">clear_all</mat-icon>
                 </button>
             </div>
+        </div>
+    </div>
+    <img class="section" src="assets/section.png"/>
+    <div id="Tecnologies" class="tecnologies" fxLayout="row" fxLayoutAlign="center center" fxLayout.xs="column"inViewport (onInViewportChange)="onViewportChange($event,2)">
+        <div class="tecnologies-" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
+
+        </div>
+        <div class="tecnologies-member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
+            
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@ import { angularMaterialModule } from './modules/angularMaterial/angularMaterial
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InViewportModule } from 'angular-inviewport';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     angularMaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    InViewportModule
+    InViewportModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
