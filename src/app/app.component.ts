@@ -8,14 +8,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class AppComponent {
   title = 'frontend-backend-server-team';
- private bSections: boolean[];
- private backImage: string[];
- private selectedIndex: number;
- private scrollSize: number;
 
+ private backImage: string[];
+ private scrollSize: number;
+ private front: boolean;
   constructor(){
-    this.selectedIndex=0;
-    this.bSections = [false,false,false,false,false];
     this.backImage = [
     'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwPsyja2qthIP6ou09Phl0qxGoaeLexJIdGe153YeUDRwq1ve)',
     'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0wbCPRqtOC47fqP1J8g8CV_np6abo_q1B46kSBgu1Dtrw2aG)',
@@ -24,21 +21,10 @@ export class AppComponent {
     'url(http://www.innoenergy.com/wp-content/uploads/2015/11/Elena-Bou-20151.jpg)',
     'url(https://businessportraitsnyc.com/wp-content/uploads/2012/09/BusinessPortrait_hler.jpg)'];
     this.scrollSize = -64;
+    this.front = true;
   }
 
-  onViewportChange(inViewport: boolean, index: number){
-    this.bSections[index] = inViewport;
-    for (let index = 0,flag = true; index < 5 && flag; index++) {
-      if(this.bSections[index] === true){
-        flag = false;
-        this.selectedIndex = index;
-      }
-    }
+  changeTec(shouldBeShown:boolean){
+    this.front = shouldBeShown;
   }
-  onMenuClick(index: number){
-    this.selectedIndex = index;
-  }  
-
-
-
 }

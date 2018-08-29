@@ -1,214 +1,223 @@
 <div class="home">
-    <mat-toolbar color="primary">
-        <mat-toolbar-row>
-            <button mat-button (click)="onMenuClick(0)"
-                [ngx-scroll-to]="'#mobile-competence'" fxLayoutAlign="center center">
-                <span class="logo">
-                    <img src="assets/icon-body.png" />
-                </span>
-            </button>
-            <span class="spacer"></span>
-            <!-- <span>WORLDLINE SERVER TEAM</span> -->
-            <span class="spacer"></span>
-            <!-- <mat-icon class="icon">business</mat-icon>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-button [ngx-scroll-to]="'#mobile-competence'" fxLayoutAlign="center center">
+        <span class="logo">
+          <img src="assets/icon-body.png" />
+        </span>
+      </button>
+      <span class="spacer"></span>
+      <!-- <span>WORLDLINE SERVER TEAM</span> -->
+      <span class="spacer"></span>
+      <!-- <mat-icon class="icon">business</mat-icon>
             <mat-icon class="icon">clear_all</mat-icon> -->
-            <div class="references" fxLayout="row" fxLayoutAlign="center center" fxShow="false" fxShow.gt-sm="true">
-                <button mat-button (click)="onMenuClick(1)" [ngClass]="selectedIndex === 1 ? 'header-button-clicked' : 'header-button-notclicked'"
-                    [ngx-scroll-to]="'#about-us'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
-                    fxLayoutAlign="center center">About us</button>
-                <button mat-button (click)="onMenuClick(2)" [ngClass]="selectedIndex === 2 ? 'header-button-clicked' : 'header-button-notclicked'"
-                    [ngx-scroll-to]="'#team'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
-                    fxLayoutAlign="center center">Our team</button>
-                <button mat-button (click)="onMenuClick(3)" [ngClass]="selectedIndex === 3 ? 'header-button-clicked' : 'header-button-notclicked'"
-                    [ngx-scroll-to]="'#tecnologies'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
-                    fxLayoutAlign="center center">Tecnologies</button>
-                <button mat-button (click)="onMenuClick(4)" [ngClass]="selectedIndex === 4 ? 'header-button-clicked' : 'header-button-notclicked'"
-                    [ngx-scroll-to]="'#contact'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
-                    fxLayoutAlign="center center">Contact</button>
-            </div>
-            <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxShow.gt-sm="false">
-                <mat-icon class="icon">clear_all</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#mobile-competence'">Mobile Competence</button>
-                <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#about-us'">About us</button>
-                <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#team'">Team</button>
-                <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#tecnologies'">Tecnologies</button>
-                <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#contact'">Contact</button>
-            </mat-menu>
-        </mat-toolbar-row>
-    </mat-toolbar>
-    <div id="mobile-competence" class="mobile-competence" fxLayout="row" fxLayoutAlign="center center" inViewport (onInViewportChange)="onViewportChange($event,0)">
-        <div fxFlex="90%" fxLayout="column" fxLayoutAlign="center center">
-            <div class="mobile-competence-image"></div>
-        </div>
+      <div class="references" fxLayout="row" fxLayoutAlign="center center" fxShow="false" fxShow.gt-sm="true">
+        <button mat-button class="header-button" [ngx-scroll-to]="'#about-us'" [ngx-scroll-to-offset]="scrollSize"
+          fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">About us</button>
+        <button mat-button class="header-button" [ngx-scroll-to]="'#team'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%"
+          fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Our team</button>
+        <button mat-button class="header-button" [ngx-scroll-to]="'#tecnologies'" [ngx-scroll-to-offset]="scrollSize"
+          fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Tecnologies</button>
+        <button mat-button class="header-button" [ngx-scroll-to]="'#contact'" [ngx-scroll-to-offset]="scrollSize"
+          fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Contact</button>
+      </div>
+      <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxShow.gt-sm="false">
+        <mat-icon class="icon">clear_all</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#mobile-competence'">Mobile
+          Competence</button>
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#about-us'">About
+          us</button>
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#team'">Team</button>
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#tecnologies'">Tecnologies</button>
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#contact'">Contact</button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div id="mobile-competence" class="mobile-competence" fxLayout="column" fxLayoutAlign="center center" inViewport>
+    <div style="width:90%" fxLayout="row" fxLayoutAlign="center center">
+      <div class="mobile-competence-image"></div>
     </div>
-    <div id="about-us" class="about-us" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center" inViewport (onInViewportChange)="onViewportChange($event,1)">
-        <div class="about-us-member" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">
-            <div class="about-us-name">About us</div>
-            <div class="about-us-image"></div>
-            <p class="about-description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus, non molestie ex varius. Duis
-                imperdiet odio urna, vitae dictum lorem tristique non. Pellentesque habitant morbi tristique senectus et
-                netus et malesuada fames ac turpis egestas. Cras faucibus tempor metus sit amet tristique. Sed aliquet ut
-                dui quis pharetra. Donec blandit laoreet gravida. Aliquam a suscipit enim. Nam vehicula sed erat sit amet
-                auctor. In at rhoncus enim. Donec lacinia vestibulum orci in egestas. Phasellus id lacinia elit. Vivamus
-                eleifend faucibus interdum. Donec viverra elementum odio, sed rutrum ante aliquam at. Ut dolor diam, semper
-                nec ligula nec, iaculis finibus dolor. Mauris placerat ut felis vel pretium. Aenean tincidunt feugiat ex,
-                ac iaculis ipsum ullamcorper a. Duis a lacus non dolor fermentum consectetur quis vel lorem. Fusce fringilla
-                neque sit amet auctor porta. Duis eleifend pretium velit, sit amet posuere dolor interdum vitae. Donec aliquet
-                arcu at leo rhoncus dignissim. Proin sed risus egestas, venenatis libero ut, elementum est. Vivamus feugiat
-                blandit tortor, porta efficitur mauris maximus semper. Nunc interdum nisl augue, quis tincidunt sem ultrices
-                fermentum.
-            </p>
-        </div>
+    <div [style.position]="'absolute'" [style.bottom.px]="10">
+        <h1 [style.color]="'white'" [style.fontWeight]="'bold'" [style.fontSize.px]="20">Madrid  -  Barcelona  -  Cáceres</h1>
     </div>
-    <div class="divider"></div>
-    <div id="team" class="team" fxLayout="row wrap" fxLayout.xs="column" inViewport (onInViewportChange)="onViewportChange($event,2)">
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
-            [debounce]="0">
-            <div class="avatar" [ngStyle]="{'background-image': backImage[0]}"></div>
-            <div class="name">Name 1</div>
-            <div class="job-position">JOB_POSITION</div>
-            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
-                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
-                hendrerit rhoncus. </p>
-            <div class="icon-list">
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-            </div>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
-            [debounce]="0">
-            <div class="avatar" [ngStyle]="{'background-image': backImage[1]}"></div>
-            <div class="name">Name 2</div>
-            <div class="job-position">JOB_POSITION</div>
-            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
-                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
-                hendrerit rhoncus. </p>
-            <div class="icon-list">
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-            </div>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
-            [debounce]="0">
-            <div mat-card-avatar class="avatar" [ngStyle]="{'background-image': backImage[2]}"></div>
-            <div class="name">Name 3</div>
-            <div class="job-position">JOB_POSITION</div>
-            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
-                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
-                hendrerit rhoncus. </p>
-            <div class="icon-list">
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-            </div>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
-            [debounce]="0">
-            <div class="avatar" [ngStyle]="{'background-image': backImage[3]}"></div>
-            <div class="name">Name 4</div>
-            <div class="job-position">JOB_POSITION</div>
-            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
-                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
-                hendrerit rhoncus. </p>
-            <div class="icon-list">
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-            </div>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
-            [debounce]="0">
-            <div class="avatar" [ngStyle]="{'background-image': backImage[4]}"></div>
-            <div class="name">Name 5</div>
-            <div class="job-position">JOB_POSITION</div>
-            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
-                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
-                hendrerit rhoncus. </p>
-            <div class="icon-list">
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-            </div>
-        </div>
-        <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center" inViewport
-            [debounce]="0">
-            <div class="avatar" [ngStyle]="{'background-image': backImage[5]}"></div>
-            <div class="name">Name 5</div>
-            <div class="job-position">JOB_POSITION</div>
-            <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue
-                nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
-                hendrerit rhoncus. </p>
-            <div class="icon-list">
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-                <button mat-button>
-                    <mat-icon class="icon">clear_all</mat-icon>
-                </button>
-            </div>
-        </div>
+  </div>
+  <div id="about-us" class="about-us" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center" inViewport>
+    <div class="about-us-name"fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">About us</div>
+    <div class="about-us-member" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">
+      <div class="about-us-image"></div>
+      <p class="about-description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus, non
+        molestie ex varius. Duis
+        imperdiet odio urna, vitae dictum lorem tristique non. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Cras faucibus tempor metus sit amet tristique. Sed aliquet ut
+        dui quis pharetra. Donec blandit laoreet gravida. Aliquam a suscipit enim. Nam vehicula sed erat sit amet
+        auctor. In at rhoncus enim. Donec lacinia vestibulum orci in egestas. Phasellus id lacinia elit. Vivamus
+        eleifend faucibus interdum. Donec viverra elementum odio, sed rutrum ante aliquam at. Ut dolor diam, semper
+        nec ligula nec, iaculis finibus dolor. Mauris placerat ut felis vel pretium. Aenean tincidunt feugiat ex,
+        ac iaculis ipsum ullamcorper a. Duis a lacus non dolor fermentum consectetur quis vel lorem. Fusce fringilla
+        neque sit amet auctor porta. Duis eleifend pretium velit, sit amet posuere dolor interdum vitae. Donec aliquet
+        arcu at leo rhoncus dignissim. Proin sed risus egestas, venenatis libero ut, elementum est. Vivamus feugiat
+        blandit tortor, porta efficitur mauris maximus semper. Nunc interdum nisl augue, quis tincidunt sem ultrices
+        fermentum.
+      </p>
     </div>
-    <div id="Tecnologies" class="tecnologies" fxLayout="row" fxLayoutAlign="center center" fxLayout.xs="column" inViewport (onInViewportChange)="onViewportChange($event,3)">
-        <div class="tecnologies-" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
+  </div>
+  <div class="divider-fliped"></div>
+  <div id="team" class="team" fxLayout="row wrap" fxLayout.xs="column" inViewpor>
+    <div class="team-title"fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">Our team</div>
+    <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center"
+      inViewport [debounce]="0">
+      <div class="avatar" [ngStyle]="{'background-image': backImage[0]}"></div>
+      <div class="name">Name 1</div>
+      <div class="job-position">JOB_POSITION</div>
+      <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non
+        gravida eget, congue
+        nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+        hendrerit rhoncus. </p>
+      <div class="icon-list">
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center"
+      inViewport [debounce]="0">
+      <div class="avatar" [ngStyle]="{'background-image': backImage[1]}"></div>
+      <div class="name">Name 2</div>
+      <div class="job-position">JOB_POSITION</div>
+      <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non
+        gravida eget, congue
+        nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+        hendrerit rhoncus. </p>
+      <div class="icon-list">
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center"
+      inViewport [debounce]="0">
+      <div mat-card-avatar class="avatar" [ngStyle]="{'background-image': backImage[2]}"></div>
+      <div class="name">Name 3</div>
+      <div class="job-position">JOB_POSITION</div>
+      <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non
+        gravida eget, congue
+        nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+        hendrerit rhoncus. </p>
+      <div class="icon-list">
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center"
+      inViewport [debounce]="0">
+      <div class="avatar" [ngStyle]="{'background-image': backImage[3]}"></div>
+      <div class="name">Name 4</div>
+      <div class="job-position">JOB_POSITION</div>
+      <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non
+        gravida eget, congue
+        nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+        hendrerit rhoncus. </p>
+      <div class="icon-list">
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center"
+      inViewport [debounce]="0">
+      <div class="avatar" [ngStyle]="{'background-image': backImage[4]}"></div>
+      <div class="name">Name 5</div>
+      <div class="job-position">JOB_POSITION</div>
+      <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non
+        gravida eget, congue
+        nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+        hendrerit rhoncus. </p>
+      <div class="icon-list">
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="member" fxFlex="100%" fxFlex.gt-sm="33%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center"
+      inViewport [debounce]="0">
+      <div class="avatar" [ngStyle]="{'background-image': backImage[5]}"></div>
+      <div class="name">Name 5</div>
+      <div class="job-position">JOB_POSITION</div>
+      <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non
+        gravida eget, congue
+        nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis
+        hendrerit rhoncus. </p>
+      <div class="icon-list">
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">clear_all</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div id="tecnologies" class="tecnologies" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
+        <div class="tecnologies-title"fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">Tecnologies</div>
+        <button mat-menu-item class="tecnologies-button" fxFlex="50%" (click)="changeTec(true)">Frontend</button>
+        <button mat-menu-item class="tecnologies-button" fxFlex="50%" (click)="changeTec(false)">Backend</button>
+  </div>
 
-        </div>
-        <div class="tecnologies-member" fxFlex="100%" fxFlex.gt-sm="25%" fxFlex.gt-xs="33%" fxLayout="column" fxLayoutAlign="center center">
-
-        </div>
-    </div>
+  <div *ngIf="front" class="frontend-tec">front</div>
+  <div *ngIf="!front" class="backend-tec">back</div>
 </div>
