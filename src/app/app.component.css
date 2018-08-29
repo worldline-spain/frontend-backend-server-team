@@ -1,175 +1,232 @@
 .mat-toolbar {
-    color: rgba(255, 255, 255, 1);
-    background-color: #0066a1d7;
-    position: fixed;
-    z-index: 2;
+  color: rgba(255, 255, 255, 1);
+  background-color: #0066a1d7;
+  position: fixed;
+  z-index: 2;
 }
 
 .logo {
   display: flex;
 }
 
-.logo > img {
+.logo>img {
   height: 50px;
 }
 
 .icon {
-    padding: 0 10px;
+  padding: 0 10px;
 }
-  
+
 .spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 /****** HOME *******/
+.mobile-competence {
+  background-image: url('../assets/photo3.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 100vh rgba(0, 102, 161, 0.1) inset;
+}
+
 .about-us {
-    height: 847px;
-    background-image:url('../assets/city2.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: auto;
+  background-color: #0066a1
 }
-.about-us-member{
-    padding: 20px 20px 20px;
-    background-color: #f5f5f5ad;
+
+.about-us-member {
+  padding: 20px 20px 20px;
+  margin: 30px;
+  background-color: #f5f5f5ad;
 }
-.about-us-image{
-    background-image: url('../assets/about-us.png');
-    background-size: cover;
-    align-self: center;
-    margin: 40px;
-    width:23rem;
-    height:15rem;
+
+.about-us-image {
+  background-image: url('../assets/about-us.png');
+  background-size: contain;
+  margin: 20px 0;
+  width: 100%;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.about-us-name{
-    font-family: 'Stag Book';
-    font-weight: bold;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 2rem;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: .15em;
-    animation: 
-        typing 5.5s steps(400, end),
-        blink-caret 2s step-end infinite;
+
+.about-us-name {
+  font-family: 'Stag Book';
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: .15em;
+  animation:
+    typing 5.5s steps(400, end),
+    blink-caret 2s step-end infinite;
 }
+
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+  from {
+    width: 0
   }
 
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
 
 .team {
-    padding: 30px 20px 20px;
+  padding: 30px 20px 20px;
 }
+
 @keyframes inside {
-    from {
-        opacity:0;
-        transform:translateY(-100%);
-        
-    }
-    75%  {opacity:0.1;}
-    to {
-        opacity:1;
-        transform:translateY(0%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  75% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .member.in-viewport {
-    animation: inside 400ms ease-out 1 
+  animation: inside 400ms ease-out 1
 }
 
 .member {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
-.member .avatar{
-    background-size: cover;
-    align-self: center;
-    border-radius: 50%;
-    width:10rem;
-    height:10rem;
+.member .avatar {
+  background-size: cover;
+  align-self: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .name {
-    font-family: 'Stag Book';
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 10px;
-    text-align: center;
-}
-.job-position{
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-}
-.description{
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: justify;
-}
-.about-description{
-    padding:0 8%;
-    font-weight: bold;
-    text-align: left;
+  font-family: 'Stag Book';
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
 }
 
-.icon-list{
-    margin-top:10px;
-}
-.mat-button{
-    padding: 0px;
-    min-width: 0px;
+.job-position {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
 }
 
-@media (max-width:599px){
-    .logo > img {
-        height: 40px;
-      }
+.description {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
-.section{
-    width:100%;
-    height: 5rem;
+.about-description {
+  padding: 0 8%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  text-align: justify;
 }
 
-.tecnologies{
-    background-color:#3266a1;
+.icon-list {
+  margin-top: 10px;
 }
 
-.references{
-    height:100%;
-}
-.header-button-notclicked{
-    color: white;
-    padding: 0px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:100%;
+.mat-button {
+  padding: 0px;
+  min-width: 0px;
 }
 
-.header-button-clicked{
-    color: white;
-    font-weight: bold;
-    padding: 0px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:100%;
-    background-color: #003f63d7;
+@media (max-width:599px) {
+  .logo>img {
+    height: 40px;
+  }
 }
 
-.menu-button{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #0066a1d7;
+.section {
+  width: 100%;
+  height: 5rem;
+}
+
+.tecnologies {
+  background-color: #0066a1;
+}
+
+.references {
+  height: 100%;
+}
+
+.references button {
+  font-size: 18px;
+}
+
+.header-button-notclicked {
+  color: white;
+  padding: 0px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 100%;
+}
+
+.header-button-clicked {
+  color: white;
+  font-weight: bold;
+  padding: 0px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 100%;
+  background-color: #003f63d7;
+}
+
+.menu-button {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #0066a1d7;
+}
+
+.divider {
+  background-image: url('../assets/divider.png');
+  width: 100%;
+  height: 200px;
+  transform: scaleY(-1);
+}
+
+.mobile-competence-image {
+  background-image: url('../assets/icon-body.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
 }
