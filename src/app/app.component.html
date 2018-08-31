@@ -13,8 +13,8 @@
           fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">About us</button>
         <button mat-button class="header-button" [ngx-scroll-to]="'#team'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%" fxFlex.gt-sm="30%"
           fxFlex.gt-xs="70%" fxLayoutAlign="center center">Our team</button>
-        <button mat-button class="header-button" [ngx-scroll-to]="'#tecnologies'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%"
-          fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Tecnologies</button>
+        <button mat-button class="header-button" [ngx-scroll-to]="'#technologies'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%"
+          fxFlex.gt-sm="30%" fxFlex.gt-xs="70%" fxLayoutAlign="center center">Technologies</button>
         <button mat-button class="header-button" [ngx-scroll-to]="'#contact'" [ngx-scroll-to-offset]="scrollSize" fxFlex="100%" fxFlex.gt-sm="30%"
           fxFlex.gt-xs="70%" fxLayoutAlign="center center">Contact</button>
       </div>
@@ -22,14 +22,12 @@
         <mat-icon class="icon">clear_all</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#mobile-competence'">Mobile
-          Competence
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#mobile-competence'">Mobile Competence
         </button>
-        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#about-us'">About
-          us
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#about-us'">About us
         </button>
         <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#team'">Team</button>
-        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#tecnologies'">Tecnologies</button>
+        <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#technologies'">Technologies</button>
         <button mat-menu-item class="menu-button" [ngx-scroll-to-offset]="scrollSize" [ngx-scroll-to]="'#contact'">Contact</button>
       </mat-menu>
     </mat-toolbar-row>
@@ -46,17 +44,17 @@
     <div class="about-us-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">About us</div>
     <div class="about-us-member" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">
       <div class="about-us-member-image"></div>
-      <p class="about-us-member-description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus,
-        non molestie ex varius. Duis imperdiet odio urna, vitae dictum lorem tristique non. Pellentesque habitant morbi tristique
-        senectus et netus et malesuada fames ac turpis egestas. Cras faucibus tempor metus sit amet tristique. Sed aliquet
-        ut dui quis pharetra. Donec blandit laoreet gravida. Aliquam a suscipit enim. Nam vehicula sed erat sit amet auctor.
-        In at rhoncus enim. Donec lacinia vestibulum orci in egestas. Phasellus id lacinia elit. Vivamus eleifend faucibus
-        interdum. Donec viverra elementum odio, sed rutrum ante aliquam at. Ut dolor diam, semper nec ligula nec, iaculis
-        finibus dolor. Mauris placerat ut felis vel pretium. Aenean tincidunt feugiat ex, ac iaculis ipsum ullamcorper a.
-        Duis a lacus non dolor fermentum consectetur quis vel lorem. Fusce fringilla neque sit amet auctor porta. Duis eleifend
-        pretium velit, sit amet posuere dolor interdum vitae. Donec aliquet arcu at leo rhoncus dignissim. Proin sed risus
-        egestas, venenatis libero ut, elementum est. Vivamus feugiat blandit tortor, porta efficitur mauris maximus semper.
-        Nunc interdum nisl augue, quis tincidunt sem ultrices fermentum.
+      <p class="about-us-member-description"> Vivamus sed sodales sapien, in lacinia elit. Duis tincidunt eros vel ex cursus, non molestie ex varius. Duis imperdiet
+        odio urna, vitae dictum lorem tristique non. Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Cras faucibus tempor metus sit amet tristique. Sed aliquet ut dui quis pharetra. Donec blandit
+        laoreet gravida. Aliquam a suscipit enim. Nam vehicula sed erat sit amet auctor. In at rhoncus enim. Donec lacinia
+        vestibulum orci in egestas. Phasellus id lacinia elit. Vivamus eleifend faucibus interdum. Donec viverra elementum
+        odio, sed rutrum ante aliquam at. Ut dolor diam, semper nec ligula nec, iaculis finibus dolor. Mauris placerat ut
+        felis vel pretium. Aenean tincidunt feugiat ex, ac iaculis ipsum ullamcorper a. Duis a lacus non dolor fermentum
+        consectetur quis vel lorem. Fusce fringilla neque sit amet auctor porta. Duis eleifend pretium velit, sit amet posuere
+        dolor interdum vitae. Donec aliquet arcu at leo rhoncus dignissim. Proin sed risus egestas, venenatis libero ut,
+        elementum est. Vivamus feugiat blandit tortor, porta efficitur mauris maximus semper. Nunc interdum nisl augue, quis
+        tincidunt sem ultrices fermentum.
       </p>
     </div>
   </div>
@@ -68,9 +66,9 @@
       <div class="team-member-avatar" [ngStyle]="{'background-image': backImage[0]}"></div>
       <div class="team-member-name">Name 1</div>
       <div class="team-member-job-position">JOB_POSITION</div>
-      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare
-        non gravida eget, congue nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet
-        nisl. Sed sagittis hendrerit rhoncus. </p>
+      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue nec mi.
+        Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis hendrerit rhoncus.
+      </p>
       <div class="team-member-icon-list">
         <button mat-button>
           <mat-icon class="icon">clear_all</mat-icon>
@@ -91,9 +89,9 @@
       <div class="team-member-avatar" [ngStyle]="{'background-image': backImage[1]}"></div>
       <div class="team-member-name">Name 2</div>
       <div class="team-member-job-position">JOB_POSITION</div>
-      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare
-        non gravida eget, congue nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet
-        nisl. Sed sagittis hendrerit rhoncus. </p>
+      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue nec mi.
+        Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis hendrerit rhoncus.
+      </p>
       <div class="team-member-icon-list">
         <button mat-button>
           <mat-icon class="icon">clear_all</mat-icon>
@@ -114,9 +112,9 @@
       <div mat-card-avatar class="team-member-avatar" [ngStyle]="{'background-image': backImage[2]}"></div>
       <div class="team-member-name">Name 3</div>
       <div class="team-member-job-position">JOB_POSITION</div>
-      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare
-        non gravida eget, congue nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet
-        nisl. Sed sagittis hendrerit rhoncus. </p>
+      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue nec mi.
+        Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis hendrerit rhoncus.
+      </p>
       <div class="team-member-icon-list">
         <button mat-button>
           <mat-icon class="icon">clear_all</mat-icon>
@@ -137,9 +135,9 @@
       <div class="team-member-avatar" [ngStyle]="{'background-image': backImage[3]}"></div>
       <div class="team-member-name">Name 4</div>
       <div class="team-member-job-position">JOB_POSITION</div>
-      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare
-        non gravida eget, congue nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet
-        nisl. Sed sagittis hendrerit rhoncus. </p>
+      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue nec mi.
+        Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis hendrerit rhoncus.
+      </p>
       <div class="team-member-icon-list">
         <button mat-button>
           <mat-icon class="icon">clear_all</mat-icon>
@@ -160,9 +158,9 @@
       <div class="team-member-avatar" [ngStyle]="{'background-image': backImage[4]}"></div>
       <div class="team-member-name">Name 5</div>
       <div class="team-member-job-position">JOB_POSITION</div>
-      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare
-        non gravida eget, congue nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet
-        nisl. Sed sagittis hendrerit rhoncus. </p>
+      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue nec mi.
+        Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis hendrerit rhoncus.
+      </p>
       <div class="team-member-icon-list">
         <button mat-button>
           <mat-icon class="icon">clear_all</mat-icon>
@@ -183,9 +181,9 @@
       <div class="team-member-avatar" [ngStyle]="{'background-image': backImage[5]}"></div>
       <div class="team-member-name">Name 5</div>
       <div class="team-member-job-position">JOB_POSITION</div>
-      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare
-        non gravida eget, congue nec mi. Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet
-        nisl. Sed sagittis hendrerit rhoncus. </p>
+      <p class="team-member-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula risus, ornare non gravida eget, congue nec mi.
+        Aliquam sed odio orci. Mauris sit amet diam finibus, porttitor nunc quis, aliquet nisl. Sed sagittis hendrerit rhoncus.
+      </p>
       <div class="team-member-icon-list">
         <button mat-button>
           <mat-icon class="icon">clear_all</mat-icon>
@@ -203,52 +201,52 @@
     </div>
   </div>
   <div class="divider"></div>
-  <div id="tecnologies" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
-    <div class="tecnologies-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">Tecnologies</div>
-    <div class="tecnologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column" fxLayoutAlign="center center">
-      <div class="tecnologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">Frontend</div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-        <div class="tecnologies-member-image"fxFlex=" 100% "fxLayoutAlign="center center">
-          <img [src]="tecImage[0]">
+  <div id="technologies" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
+    <div class="technologies-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">Technologies</div>
+    <div class="technologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column" fxLayoutAlign="center center">
+      <div class="technologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">FRONTEND</div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[0]"></div>
         </div>
       </div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[1]">
-            </div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[1]"></div>
+        </div>
       </div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[2]">
-            </div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[2]"></div>
+        </div>
       </div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[3]">
-            </div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[3]"></div>
+        </div>
       </div>
     </div>
-    <div class="tecnologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column" fxLayoutAlign="center center">
-      <div class="tecnologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">Backend</div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[4]">
-            </div>
+    <div class="technologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column" fxLayoutAlign="center center">
+      <div class="technologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">BACKEND</div>
+      <div class="technologies-item" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[4]"></div>
+        </div>
       </div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[5]">
-            </div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[5]"></div>
+        </div>
       </div>
-      <div class="tecnologies-member" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[6]">
-            </div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[6]"></div>
+        </div>
       </div>
-      <div class="tecnologies-member" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-          <div class="tecnologies-member-image"fxFlex=" 100% " fxLayoutAlign="center center">
-              <img [src]="tecImage[7]">
-            </div>
+      <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+        <div class="technologies-item-image" fxLayoutAlign="center center">
+          <div class="technology-image-wrapper"><img [src]="tecImage[7]"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -263,7 +261,7 @@
         <input matInput placeholder="Subject" formControlName="subject">
       </mat-form-field>
       <mat-form-field fxFlex="100%">
-        <textarea  matInput placeholder="Leave a comment" formControlName="text"></textarea>
+        <textarea matInput placeholder="Leave a comment" formControlName="text"></textarea>
       </mat-form-field>
       <button [disabled]="contactFormControl.invalid" mat-raised-button color="primary" type="submit">Submit</button>
     </form>

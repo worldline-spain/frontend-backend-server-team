@@ -27,12 +27,12 @@ export class AppComponent {
     this.tecImage = [
       'assets/angular.svg',
       'assets/sass.svg',
-      'assets/ionic.png',
+      'assets/ionic.svg',
       'assets/cordova.png',
       'assets/java.svg',
-      'assets/node.svg',
-      'assets/mongo.png',
-      'assets/docker.svg',
+      'assets/node.png',
+      'assets/mongodb.svg',
+      'assets/docker.png',
 
     ];
     this.scrollSize = -64;

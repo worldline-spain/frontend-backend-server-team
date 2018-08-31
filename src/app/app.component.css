@@ -1,90 +1,92 @@
 /****************** MEDIA *******************/
 
-@media (max-width:599px) {
-  .logo>img {
-    height: 40px;
-  }
+@media (max-width: 599px) {
+    .logo > img {
+        height: 40px;
+    }
 }
 
 /****************** ANIMATIONS *******************/
 
 @keyframes inside {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  75% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    75% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 /****************** DIVIDERS *******************/
 
 .divider-fliped {
-  background-image: url('../assets/divider.png');
-  width: 100%;
-  height: 200px;
-  transform: scaleY(-1);
+    background-image: url("../assets/divider.png");
+    width: 100%;
+    height: 200px;
+    transform: scaleY(-1);
 }
 
 .divider {
-  background-image: url('../assets/divider.png');
-  width: 100%;
-  height: 200px;
+    background-image: url("../assets/divider.png");
+    width: 100%;
+    height: 200px;
 }
 
 /****************** HEADER *******************/
 
 .logo {
-  display: flex;
+    display: flex;
 }
 
-.logo>img {
-  height: 50px;
+.logo > img {
+    height: 50px;
 }
 
 .spacer {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .references {
-  height: 100%;
+    height: 100%;
 }
 
 .references button {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .mat-toolbar {
-  color: rgba(255, 255, 255, 1);
-  background-color: #0066a1d7;
-  position: fixed;
-  z-index: 2;
+    color: rgba(255, 255, 255, 1);
+    background-color: #0066a1d7;
+    position: fixed;
+    z-index: 2;
 }
 
 .icon {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 .references .header-button {
-  color: white;
-  padding: 0px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  height: 100%;
+    color: white;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 100%;
 }
 
 .menu-button {
-  color: #0066a1;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: white;
+    color: #0066a1;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
 }
 
 /****************** HOME *******************/
@@ -92,203 +94,208 @@
 /********* MOBILE COMPETENCE SECTION *********/
 
 #mobile-competence {
-  background-image: url('../assets/photo3.jpg');
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0px 100vh rgba(0, 102, 161, 0.3) inset;
+    background-image: url("../assets/photo3.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 100vh rgba(0, 102, 161, 0.3) inset;
 }
 
 .mobile-competence-image {
-  background-image: url('../assets/icon-body.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 40vh;
+    background-image: url("../assets/icon-body.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
 }
 
 .mobile-competence-cities {
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: 40px;
-  color: white;
-  font-weight: bolder;
-  font-size: 47px;
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    font-weight: bolder;
+    font-size: 47px;
 }
 
 /********* ABOUT US SECTION *********/
 
 #about-us {
-  height: auto;
-  color: white;
-  background-color: #0066a1;
+    height: auto;
+    color: white;
+    background-color: #0066a1;
 }
 
 .about-us-member {
-  padding: 20px 20px 20px;
-  margin-bottom: 3%;
+    padding: 20px 20px 20px;
+    margin-bottom: 3%;
 }
 
 .about-us-member-image {
-  background-image: url('../assets/about-us.png');
-  background-size: contain;
-  margin: 20px 0;
-  width: 100%;
-  height: 25vh;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: url("../assets/about-us.png");
+    background-size: contain;
+    margin: 20px 0;
+    width: 100%;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-us-title {
-  font-family: 'Stag Book';
-  font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 35px;
-  margin: 90px;
-  text-align: center;
-  letter-spacing: .15em;
-  color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    font-family: 'Stag Book';
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 35px;
+    margin: 90px;
+    text-align: center;
+    letter-spacing: .15em;
+    color: white;
 }
 
 .about-us-member-description {
-  padding: 0 8%;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 20px 0;
-  text-align: justify;
+    padding: 0 8%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    text-align: justify;
 }
 
 /********* TEAM SECTION *********/
 
 .team-title, .contact-title {
-  font-family: 'Stag Book';
-  font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 35px;
-  margin: 20px 90px 90px 90px;
-  text-align: center;
-  letter-spacing: .15em;
-  color: #0066a1;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.48), 0px 8px 13px rgba(0, 0, 0, 0), 0px 18px 23px rgba(0, 0, 0, 0);
+    font-family: 'Stag Book';
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 35px;
+    margin: 20px 40px 40px;
+    text-align: center;
+    letter-spacing: .15em;
+    color: #0066a1;
 }
 
 .team-member-name {
-  font-family: 'Stag Book';
-  font-weight: bold;
-  font-size: 25px;
-  margin: 10px;
-  text-align: center;
+    font-family: 'Stag Book';
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
 }
 
 .team-member {
-  padding: 10px 20px;
-  margin-bottom: 1%;
+    padding: 10px 20px;
+    margin-bottom: 1%;
 }
 
 .team-member-avatar {
-  background-size: cover;
-  align-self: center;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+    background-size: cover;
+    align-self: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .team-member.in-viewport {
-  animation: inside 400ms ease-out 1
+    animation: inside 400ms ease-out 1;
 }
 
 .team-member-job-position {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
 .team-member-description {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .team-member-icon-list {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .mat-button {
-  padding: 0px;
-  min-width: 0px;
+    padding: 0px;
+    min-width: 0px;
 }
 
 .section {
-  width: 100%;
-  height: 5rem;
+    width: 100%;
+    height: 5rem;
 }
 
-/********* TECNOLOGIES SECTION *********/
+/********* TECHNOLOGIES SECTION *********/
 
-#tecnologies {
-  background-color: #0066a1;
+#technologies {
+    background-color: #0066a1;
 }
 
-.tecnologies-title {
-  font-family: 'Stag Book';
-  font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 35px;
-  margin: 90px;
-  text-align: center;
-  letter-spacing: .15em;
-  color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+.technologies-title {
+    font-family: 'Stag Book';
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 35px;
+    margin: 65px 90px;
+    text-align: center;
+    letter-spacing: .15em;
+    color: white;
 }
 
-.tecnologies-group{
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'Stag Book';
-  color: white;
-  text-align: center;
-  margin-bottom: 100px;
+.technologies-group {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Stag Book';
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
-.tecnologies-member-image{
-  width: 250px;
-  height:250px;
-  background-color:grey;
-  border-radius: 50%;
+.technologies-item {
+    padding: 20px 10px;
 }
 
-.tecnologies-member-image > img{
-  width: 200px;
-  
+.technologies-item-image {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
 }
-.tecnologies-group-title{
-  font-family: 'Stag Book';
-  font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 25px;
-  margin: 0 0 70px 0;
-  text-align: center;
-  letter-spacing: .15em;
-  color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+
+.technology-image-wrapper {
+    width: 175px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-image-wrapper > img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.technologies-group-title {
+    font-family: 'Stag Book';
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 25px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    letter-spacing: .15em;
+    color: white;
 }
 
 /********* CONTACT SECTION *********/
 
-form{
-  padding:100px;
+form {
+    padding: 100px;
 }
 
-mat-form-field input ,mat-form-field textarea{
-  color: #0066a1;
-  font-size: 20px;
-  font-size: bolder;
+mat-form-field input, mat-form-field textarea {
+    color: #0066a1;
+    font-size: 20px;
 }
