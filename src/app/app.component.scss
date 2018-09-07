@@ -1,0 +1,30 @@
+@import '../sass/variables';
+@import "../sass/mixins";
+@import "../sass/animations";
+
+
+/****************** DIVIDERS *******************/
+
+.divider-fliped {
+    background-image: url("../assets/img/divider.png");
+    width: 100%;
+    height: 200px;
+    transform: scaleY(-1);
+}
+
+.divider {
+    background-image: url("../assets/img/divider.png");
+    width: 100%;
+    height: 200px;
+}
+
+/********* CONTACT SECTION *********/
+
+form {
+    padding: 100px;
+}
+
+mat-form-field input, mat-form-field textarea {
+    color: #0066a1;
+    font-size: 20px;
+}

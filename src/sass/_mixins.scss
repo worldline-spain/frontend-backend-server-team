@@ -1,0 +1,6 @@
+
+@mixin tablet {
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        @content;
+    }
+}

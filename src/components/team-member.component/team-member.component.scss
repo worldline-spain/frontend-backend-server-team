@@ -1,0 +1,43 @@
+@import "../../sass/variables";
+@import "../../sass/animations";
+
+.team-member {
+    padding: 10px 20px;
+    margin-bottom: 1%;
+
+    .team-member-avatar {
+        background-size: cover;
+        align-self: center;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .team-member-name {
+        font-family: 'Stag Book';
+        font-weight: bold;
+        font-size: 25px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    &.in-viewport {
+        animation: inside 400ms ease-out 1;
+    }
+
+    .team-member-job-position {
+        font-size: 23px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+    }
+
+    .team-member-description {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    .team-member-icon-list {
+        margin-top: 10px;
+    }
+}

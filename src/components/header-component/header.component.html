@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div (click)="emitClick('mobile-competence')" fxLayoutAlign="center center">
+      <span class="logo">
+        <img src="assets/img/icon-body.png" />
+      </span>
+    </div>
+    <span class="spacer"></span>
+    <span class="spacer"></span>
+    <div class="references" fxLayout="row" fxLayoutAlign="center center" fxShow="false" fxShow.gt-sm="true">
+      <button mat-button class="header-button" (click)="emitClick('about-us')" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
+        fxLayoutAlign="center center">About us</button>
+      <button mat-button class="header-button" (click)="emitClick('team')" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
+        fxLayoutAlign="center center">Our team</button>
+      <button mat-button class="header-button" (click)="emitClick('technologies')" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
+        fxLayoutAlign="center center">Technologies</button>
+      <button mat-button class="header-button" (click)="emitClick('contact')" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
+        fxLayoutAlign="center center">Contact</button>
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxShow.gt-sm="false">
+      <mat-icon class="icon">clear_all</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item class="menu-button" (click)="emitClick('mobile-competence')">Mobile Competence
+      </button>
+      <button mat-menu-item class="menu-button" (click)="emitClick('about-us')">About us
+      </button>
+      <button mat-menu-item class="menu-button" (click)="emitClick('team')">Team</button>
+      <button mat-menu-item class="menu-button" (click)="emitClick('technologies')">Technologies</button>
+      <button mat-menu-item class="menu-button" (click)="emitClick('contact')">Contact</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

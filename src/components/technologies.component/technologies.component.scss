@@ -1,0 +1,60 @@
+@import "../../sass/variables";
+
+.technologies {
+    background-color: #0066a1;
+
+    .technologies-title {
+        font-family: 'Stag Book';
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 35px;
+        margin: 65px 90px;
+        text-align: center;
+        letter-spacing: .15em;
+        color: white;
+    }
+
+    .technologies-group {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Stag Book';
+        color: white;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .technologies-item {
+        padding: 20px 10px;
+    }
+
+    .technologies-item-image {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+    }
+
+    .technology-image-wrapper {
+        width: 175px;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .technology-image-wrapper > img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .technologies-group-title {
+        font-family: 'Stag Book';
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 25px;
+        margin: 0 0 40px 0;
+        text-align: center;
+        letter-spacing: .15em;
+        color: white;
+    }
+}

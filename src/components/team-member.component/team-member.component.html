@@ -1,0 +1,11 @@
+<div class="team-member" fxLayout="column" fxLayoutAlign="center center" fxFlex="100%" inViewport [debounce]="0">
+  <div class="team-member-avatar"></div>
+  <div class="team-member-name"> {{ member.name }} </div>
+  <div class="team-member-job-position"> {{ member.position }} </div>
+  <p class="team-member-description"> {{ member.description }} </p>
+  <div class="team-member-icon-list" *ngFor="let social of member.social">
+    <a href=" {{social.url}} ">
+      <mat-icon class="icon"> {{ social.icon }} </mat-icon>
+    </a>
+  </div>
+</div>

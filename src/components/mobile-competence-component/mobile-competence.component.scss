@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+
+.mobile-competence {
+    background-image: url("../../assets/img/photo3.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 100vh rgba(0, 102, 161, 0.3) inset;
+    .mobile-competence-image {
+        background-image: url("../../assets/img/icon-body.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .mobile-competence-cities {
+        position: absolute;
+        bottom: 40px;
+        color: white;
+        font-weight: bolder;
+        font-size: 47px;
+    }
+}

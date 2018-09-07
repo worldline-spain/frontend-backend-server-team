@@ -1,0 +1,4 @@
+<div id="team" fxLayout="row wrap" fxLayout.xs="column" inViewport>
+  <div class="team-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center start">Our team</div>
+  <mcc-team-member *ngFor="let member of team" [member]="member" fxFlex="33%" fxLayout="row" fxLayoutAlign="center start"></mcc-team-member>
+</div>
