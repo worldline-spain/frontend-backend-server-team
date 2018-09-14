@@ -3,48 +3,24 @@
   <div class="technologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column"
     fxLayoutAlign="center center">
     <div class="technologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">FRONTEND</div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+    <div *ngFor="let frontTech of technologies.frontend" class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%"
+      fxLayoutAlign="center center">
       <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
-      </div>
-    </div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-      <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
-      </div>
-    </div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-      <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
-      </div>
-    </div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-      <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
+        <div class="technology-image-wrapper">
+          <div class="logo-wrapper" [style.background-image]="'url('+frontTech.logo+')'"></div>
+        </div>
       </div>
     </div>
   </div>
   <div class="technologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column"
     fxLayoutAlign="center center">
     <div class="technologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">BACKEND</div>
-    <div class="technologies-item" fxFlex=" 100% " fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+    <div *ngFor="let backTech of technologies.backend" class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%"
+      fxLayoutAlign="center center">
       <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
-      </div>
-    </div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-      <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
-      </div>
-    </div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-      <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
-      </div>
-    </div>
-    <div class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
-      <div class="technologies-item-image" fxLayoutAlign="center center">
-        <div class="technology-image-wrapper"></div>
+        <div class="technology-image-wrapper">
+          <div class="logo-wrapper" [style.background-image]="'url('+backTech.logo+')'"></div>
+        </div>
       </div>
     </div>
   </div>

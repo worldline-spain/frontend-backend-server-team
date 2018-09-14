@@ -14,8 +14,6 @@
         fxLayoutAlign="center center">Our team</button>
       <button mat-button class="header-button" (click)="emitClick('technologies')" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
         fxLayoutAlign="center center">Technologies</button>
-      <button mat-button class="header-button" (click)="emitClick('contact')" fxFlex="100%" fxFlex.gt-sm="30%" fxFlex.gt-xs="70%"
-        fxLayoutAlign="center center">Contact</button>
     </div>
     <button mat-button [matMenuTriggerFor]="menu" fxShow="true" fxShow.gt-sm="false">
       <mat-icon class="icon">clear_all</mat-icon>
@@ -27,7 +25,6 @@
       </button>
       <button mat-menu-item class="menu-button" (click)="emitClick('team')">Team</button>
       <button mat-menu-item class="menu-button" (click)="emitClick('technologies')">Technologies</button>
-      <button mat-menu-item class="menu-button" (click)="emitClick('contact')">Contact</button>
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>

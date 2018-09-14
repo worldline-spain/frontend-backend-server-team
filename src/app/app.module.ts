@@ -13,6 +13,7 @@ import { AboutUsComponent } from '../components/about-us-component/about-us.comp
 import { TeamListComponent } from '../components/team-list.component/team-list.component';
 import { TechnologiesComponent } from '../components/technologies.component/technologies.component';
 import { TeamMemberComponent } from '../components/team-member.component/team-member.component';
+import { FooterComponent } from '../components/footer-component/footer.component';
 
 // Modules
 import { AngularMaterialModule } from '../angularMaterial/angularMaterial.module';
@@ -28,7 +29,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     AboutUsComponent,
     TeamListComponent,
     TechnologiesComponent,
-    TeamMemberComponent
+    TeamMemberComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

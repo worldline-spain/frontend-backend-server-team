@@ -31,19 +31,20 @@
     .technologies-item-image {
         background-color: rgba(255, 255, 255, 0.6);
         border-radius: 50%;
-    }
-
-    .technology-image-wrapper {
-        width: 175px;
-        height: 175px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .technology-image-wrapper > img {
-        max-width: 70%;
-        max-height: 70%;
+        .technology-image-wrapper {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logo-wrapper {
+                width: 175px;
+                height: 175px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
     }
 
     .technologies-group-title {
