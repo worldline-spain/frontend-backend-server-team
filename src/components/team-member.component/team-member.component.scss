@@ -34,10 +34,14 @@
     .team-member-description {
         font-size: 20px;
         font-weight: bold;
-        text-align: justify;
+        text-align: center;
     }
 
     .team-member-icon-list {
-        margin-top: 10px;
+        margin: 10px;
+        .icon-link {
+            font-size: 26px;
+            color: #0066a1;
+        }
     }
 }

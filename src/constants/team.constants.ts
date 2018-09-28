@@ -4,108 +4,136 @@ export const TeamMembers = [
     {
         name: 'Adrian Borrego Martinez',
         photo: 'assets/img/members/AdrianBorrego.png',
-        description: 'The any type in Typescript was build for me!',
+        description: 'Haters gonna hate',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-github',
+                url: 'https://github.com/adryy5'
             }
         ]
     },
     {
         name: 'Alberto Iglesias Gonzalo',
         photo: 'assets/img/members/AlbertoIglesias.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: 'Metrosexual part-time and full-time thinker.',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/alberto-iglesias-gonzalo-023511a9/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/srkapi'
             }
         ]
     },
     {
         name: 'Alejandro Rivas Moreira',
-        photo: 'assets/img/members/Placeholder.jpg',
-        description: 'The any type in Typescript was build for me!',
+        photo: 'assets/img/members/AlejandroRivas.jpg',
+        description: 'It is over anakin, I have the high ground',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-github',
+                url: 'https://github.com/AlexHikari/'
             }
         ]
     },
     {
         name: 'Alejandro Verbo Macias',
         photo: 'assets/img/members/AlejandroVerbo.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: 'There are two rules for success: 1) Never say everything you know',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/alejandro-verbo-0822227/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/averbo'
             }
         ]
     },
     {
         name: 'Ana Avilés Herrero',
         photo: 'assets/img/members/AnaAviles.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: 'No information found',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/ana-avil%C3%A9s-b228079/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/aAvilesh'
             }
         ]
     },
     {
         name: 'Cristina Figueres Nuñez',
         photo: 'assets/img/members/CristinaFigueres.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: ' I am too old for this shit... ',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://es.linkedin.com/in/cristinafigueres'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/cristinafigueres'
             }
         ]
     },
     {
         name: 'Dani Bautista Miralles',
         photo: 'assets/img/members/DaniBautista.png',
-        description: 'The any type in Typescript was build for me!',
+        description: 'There is no spoon',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/daniel-bautista-miralles-14707181/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/Dabami'
             }
         ]
     },
     {
         name: 'Eric Alvarez Chinchilla',
         photo: 'assets/img/members/EricAlvarez.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: '#nofilter #frontend #developer #worldline',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/eric-alvarez-chinchilla/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/ealch'
             }
         ]
     },
     {
         name: 'Jairo Costa Barriga',
         photo: 'assets/img/members/JairoCosta.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: 'magic is the science we do not understand yet',
         position: 'SCHOLARSHIP HOLDER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/jairocostaes'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/soyJairoCosta'
             }
         ]
     },
@@ -116,44 +144,56 @@ export const TeamMembers = [
         position: 'HEAD',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/jordi-escudero/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/jordiescudero'
             }
         ]
     },
     {
         name: 'Jose Luis Pleguezuelos Aguilera',
-        photo: 'assets/img/members/Placeholder.jpg',
-        description: 'The any type in Typescript was build for me!',
+        photo: 'assets/img/members/JoseLuisPleguezuelos.jpg',
+        description: 'Do not take life seriously; total, you will not live out of it',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/jose-luis-pleguezuelos-aguilera'
             }
         ]
     },
     {
         name: 'Juan Belmonte Rodríguez',
         photo: 'assets/img/members/JuanBelmonte.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: '75% water',
         position: 'DEPUTY',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/juanbelmonterodriguez/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/jbelmonte'
             }
         ]
     },
     {
         name: 'Killian Perea Ruiz',
-        photo: 'assets/img/members/Placeholder.jpg',
-        description: 'The any type in Typescript was build for me!',
+        photo: 'assets/img/members/KillianPerea.jpg',
+        description: 'Do not be another brick in the wall',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/killianperea/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/killianperea'
             }
         ]
     },
@@ -164,32 +204,44 @@ export const TeamMembers = [
         position: 'SCHOLARSHIP HOLDER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/raulfer/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/raul97fernandez'
             }
         ]
     },
     {
         name: 'Sergio Calero Robles',
         photo: 'assets/img/members/SergioCalero.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: '-It is not possible! -No, it is necessary',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/sergio-calero-robles/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/RedParabola'
             }
         ]
     },
     {
         name: 'Xavier Cases Camats',
-        photo: 'assets/img/members/Placeholder.jpg',
-        description: 'The any type in Typescript was build for me!',
+        photo: 'assets/img/members/XaviCases.jpg',
+        description: 'Be the one',
         position: 'DEVELOPER',
         social: [
             {
-                icon: 'clear_all',
-                url: 'test'
+                icon: 'fab fa-linkedin-in',
+                url: 'https://es.linkedin.com/in/xaviercasescamats'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/xeviscc'
             }
         ]
     }
