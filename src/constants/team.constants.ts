@@ -124,7 +124,7 @@ export const TeamMembers = [
     {
         name: 'Jairo Costa Barriga',
         photo: 'assets/img/members/JairoCosta.jpg',
-        description: 'magic is the science we do not understand yet',
+        description: 'Magic is the science we do not understand yet',
         position: 'SCHOLARSHIP HOLDER',
         social: [
             {
@@ -200,7 +200,7 @@ export const TeamMembers = [
     {
         name: 'Raul Fernandez Garcia',
         photo: 'assets/img/members/RaulFernandez.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: 'Be prepared',
         position: 'SCHOLARSHIP HOLDER',
         social: [
             {
