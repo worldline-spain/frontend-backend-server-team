@@ -779,7 +779,7 @@ var TeamMembers = [
     },
     {
         name: 'Ana María Castaño Díaz',
-        photo: 'assets/img/members/AnaMariaCastaño.png',
+        photo: 'assets/img/members/AnaMariaCastano.png',
         description: 'My richness is life',
         position: 'DEVELOPER',
         social: [
@@ -856,7 +856,7 @@ var TeamMembers = [
     {
         name: 'Jairo Costa Barriga',
         photo: 'assets/img/members/JairoCosta.jpg',
-        description: 'magic is the science we do not understand yet',
+        description: 'Magic is the science we do not understand yet',
         position: 'SCHOLARSHIP HOLDER',
         social: [
             {
@@ -948,7 +948,7 @@ var TeamMembers = [
     {
         name: 'Raul Fernandez Garcia',
         photo: 'assets/img/members/RaulFernandez.jpg',
-        description: 'The any type in Typescript was build for me!',
+        description: 'Be prepared',
         position: 'SCHOLARSHIP HOLDER',
         social: [
             {
