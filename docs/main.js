@@ -66,7 +66,8 @@ var AngularMaterialModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatTabsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatGridListModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSlideToggleModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatTooltipModule"]
             ],
             exports: [
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatButtonModule"],
@@ -86,6 +87,7 @@ var AngularMaterialModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatTabsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatGridListModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatTooltipModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSlideToggleModule"]
             ]
         })
@@ -104,7 +106,7 @@ var AngularMaterialModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <mcc-header (section)=\"triggerScrollTo($event)\"></mcc-header>\r\n  <mcc-mobile-competence id=\"mobile-competence\"></mcc-mobile-competence>\r\n  <mcc-about-us id=\"about-us\"></mcc-about-us>\r\n  <div class=\"divider-fliped\"></div>\r\n  <mcc-team-list id=\"team\"></mcc-team-list>\r\n  <div class=\"divider\"></div>\r\n  <mcc-technologies id=\"technologies\"></mcc-technologies>\r\n  <div class=\"divider-fliped\"></div>\r\n  <mcc-footer></mcc-footer>\r\n</div>"
+module.exports = "<div>\n  <mcc-header (section)=\"triggerScrollTo($event)\"></mcc-header>\n  <mcc-mobile-competence id=\"mobile-competence\"></mcc-mobile-competence>\n  <mcc-about-us id=\"about-us\"></mcc-about-us>\n  <div class=\"divider-fliped\"></div>\n  <mcc-team-list id=\"team\"></mcc-team-list>\n  <div class=\"divider\"></div>\n  <mcc-technologies id=\"technologies\"></mcc-technologies>\n  <div class=\"divider-fliped\"></div>\n  <mcc-footer></mcc-footer>\n</div>"
 
 /***/ }),
 
@@ -267,7 +269,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"about-us\" fxLayout=\"row wrap\" fxLayout.xs=\"column\" fxLayoutAlign=\"center center\" inViewport>\r\n  <div class=\"about-us-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center start\">About us</div>\r\n  <div class=\"about-us-member\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\r\n    <div class=\"about-us-member-image\"></div>\r\n    <p class=\"about-us-member-description\">\r\n      Server and Frontend department of the Mobile Competence Center of Worldline implements and develops mobility\r\n      solutions focused on improving business processes and reduce costs for customers.\r\n      The human factor is a key aspect in our business. According to the unwritten IT law, the quality of the product\r\n      is only as good as the team that produced it.\r\n    </p>\r\n    <p class=\"about-us-member-description\">\r\n      The core of our team consists of united, mentally nimble, experienced, like-minded professionals and we make sure\r\n      we are always educated, trained, and following the leading edge technology domain, across platforms and devices.\r\n      With almost 20 programmers on staff, they are experts in the most commonly used programming languages and\r\n      frameworks: Node.js, Angular & AngularJS, Typescript, JavaScript, Sass/LESS, Java, Spring, C++, C, Python, Perl,\r\n      C#, Swift, LUA and more!\r\n    </p>\r\n    <p class=\"about-us-member-description\">\r\n      Our emphasis on education, methodologies and training brings employees that have skills in several\r\n      specializations, which returns a comprehensive knowledge and experience in all stages of the software development\r\n      life cycle process.\r\n    </p>\r\n    <p class=\"about-us-member-description\">\r\n      Through our dedicated development team, we enable leading and emerging companies to develop high-end IT solutions\r\n      for their businesses. Find out more about each of us!\r\n    </p>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"about-us\" fxLayout=\"row wrap\" fxLayout.xs=\"column\" fxLayoutAlign=\"center center\" inViewport>\n  <div class=\"about-us-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center start\">About us</div>\n  <div class=\"about-us-member\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n    <div class=\"about-us-member-image\"></div>\n    <p class=\"about-us-member-description\">\n      Server and Frontend department of the Mobile Competence Center of Worldline implements and develops mobility\n      solutions focused on improving business processes and reduce costs for customers.\n      The human factor is a key aspect in our business. According to the unwritten IT law, the quality of the product\n      is only as good as the team that produced it.\n    </p>\n    <p class=\"about-us-member-description\">\n      The core of our team consists of united, mentally nimble, experienced, like-minded professionals and we make sure\n      we are always educated, trained, and following the leading edge technology domain, across platforms and devices.\n      With almost 20 programmers on staff, they are experts in the most commonly used programming languages and\n      frameworks: Node.js, Angular & AngularJS, Typescript, JavaScript, Sass/LESS, Java, Spring, C++, C, Python, Perl,\n      C#, Swift, LUA and more!\n    </p>\n    <p class=\"about-us-member-description\">\n      Our emphasis on education, methodologies and training brings employees that have skills in several\n      specializations, which returns a comprehensive knowledge and experience in all stages of the software development\n      life cycle process.\n    </p>\n    <p class=\"about-us-member-description\">\n      Through our dedicated development team, we enable leading and emerging companies to develop high-end IT solutions\n      for their businesses. Find out more about each of us!\n    </p>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -278,7 +280,7 @@ module.exports = "<div class=\"about-us\" fxLayout=\"row wrap\" fxLayout.xs=\"co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about-us {\n  height: auto;\n  color: white;\n  background-color: #0066a1; }\n  .about-us .about-us-member {\n    padding: 20px 20px 20px;\n    margin-bottom: 3%; }\n  .about-us .about-us-member-image {\n    background-image: url('about-us.png');\n    background-size: contain;\n    margin: 20px 0;\n    width: 100%;\n    height: 25vh;\n    background-repeat: no-repeat;\n    background-position: center; }\n  .about-us .about-us-title {\n    font-family: 'Stag Book';\n    font-weight: bold;\n    overflow: hidden;\n    white-space: nowrap;\n    font-size: 35px;\n    margin: 90px;\n    text-align: center;\n    letter-spacing: .15em;\n    color: white; }\n  .about-us .about-us-member-description {\n    padding: 0 20px;\n    font-weight: bold;\n    font-size: 23px;\n    margin: 20px 20px;\n    text-align: justify; }\n  @media (min-width: 992px) {\n  .about-us .about-us-member-description {\n    margin: 20px 280px; } }\n"
+module.exports = ".about-us {\n  height: auto;\n  color: white;\n  background-color: #0066a1; }\n  .about-us .about-us-member {\n    padding: 20px 20px 20px;\n    margin-bottom: 3%; }\n  .about-us .about-us-member-image {\n    background-image: url('about-us.png');\n    background-size: contain;\n    margin: 20px 0;\n    width: 100%;\n    height: 25vh;\n    background-repeat: no-repeat;\n    background-position: center; }\n  .about-us .about-us-title {\n    font-family: 'Stag Book';\n    font-weight: bold;\n    overflow: hidden;\n    white-space: nowrap;\n    font-size: 35px;\n    margin: 90px;\n    text-align: center;\n    letter-spacing: .15em;\n    color: white; }\n  .about-us .about-us-member-description {\n    padding: 0 20px;\n    font-weight: bold;\n    font-size: 23px;\n    margin: 20px 20px;\n    text-align: center; }\n  @media (min-width: 992px) {\n  .about-us .about-us-member-description {\n    margin: 20px 280px; } }\n"
 
 /***/ }),
 
@@ -324,7 +326,7 @@ var AboutUsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"footer\" fxFlex=\"100\" style=\"height: 200px;\">\r\n    <footer fxFlex=\"100\" fxLayout=\"row\" fxLayoutAlign=\"space-evenly end\">\r\n        <div class=\"brand\">©Worldline</div>\r\n    </footer>\r\n</div>"
+module.exports = "<div class=\"footer\" fxFlex=\"100\">\n    <footer fxFlex=\"100\" fxLayout=\"column\" fxLayoutAlign=\"end center\">\n        <div class=\"logos-wrapper\" fxFlex=\"100\" fxLayout=\"row\" fxLayout.xs=\"column\" fxLayoutAlign=\"space-around center\">\n            <div class=\"logo\">\n                <a target=\"_blank\" href=\"http://worldline.com\"><img src=\"assets/img/WL.png\" /></a>\n            </div>\n            <div class=\"logo\">\n                <a target=\"_blank\" href=\"http://www.tempos21.com/web/\"><img src=\"assets/img/WL-mcc.png\" /></a>\n            </div>\n        </div>\n        <a href=\"mailto:dl-wl-mcc-server@worldline.com\" class=\"mailto-wrapper\">\n            <i class=\"fas fa-envelope mailto-icon\"></i>\n            <span class=\"mailto\">Send us an Email</span>\n        </a>\n        <div class=\"brand-name\">Eric Álvarez Chinchilla - Killian Perea Ruiz - Alejandro Rivas Moreira</div>\n        <div class=\"brand-name\">Copyright © 2018 Tempos 21, Worldline Mobile Competence Center. All rights reserved.</div>\n    </footer>\n</div>"
 
 /***/ }),
 
@@ -335,7 +337,7 @@ module.exports = "<div class=\"footer\" fxFlex=\"100\" style=\"height: 200px;\">
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".footer .brand {\n  font-weight: bold;\n  font-size: 17px;\n  padding: 10px 0;\n  text-align: center;\n  color: #0066a1; }\n"
+module.exports = ".footer .brand-name {\n  font-weight: bold;\n  font-size: 14px;\n  padding: 5px 0;\n  text-align: center;\n  color: #0066a1; }\n\n.footer .mailto-wrapper {\n  margin-bottom: 20px;\n  text-decoration: none; }\n\n.footer .mailto-wrapper .mailto {\n    font-weight: bold;\n    font-size: 26px;\n    padding: 10px 0;\n    margin-bottom: 20px;\n    text-align: center;\n    color: #0066a1; }\n\n.footer .mailto-wrapper .mailto-icon {\n    text-decoration: none;\n    font-weight: bold;\n    font-size: 26px;\n    padding: 10px;\n    text-align: center;\n    color: #0066a1; }\n\n.footer .logos-wrapper {\n  margin: 30px 0;\n  width: 100%; }\n\n.footer .logos-wrapper .logo {\n    display: flex; }\n\n.footer .logos-wrapper .logo img {\n      height: 100px; }\n"
 
 /***/ }),
 
@@ -381,7 +383,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <div (click)=\"emitClick('mobile-competence')\" fxLayoutAlign=\"center center\">\r\n      <span class=\"logo\">\r\n        <img src=\"assets/img/icon-body.png\" />\r\n      </span>\r\n    </div>\r\n    <span class=\"spacer\"></span>\r\n    <span class=\"spacer\"></span>\r\n    <div class=\"references\" fxLayout=\"row\" fxLayoutAlign=\"center center\" fxShow=\"false\" fxShow.gt-sm=\"true\">\r\n      <button mat-button class=\"header-button\" (click)=\"emitClick('about-us')\" fxFlex=\"100%\" fxFlex.gt-sm=\"30%\" fxFlex.gt-xs=\"70%\"\r\n        fxLayoutAlign=\"center center\">About us</button>\r\n      <button mat-button class=\"header-button\" (click)=\"emitClick('team')\" fxFlex=\"100%\" fxFlex.gt-sm=\"30%\" fxFlex.gt-xs=\"70%\"\r\n        fxLayoutAlign=\"center center\">Our team</button>\r\n      <button mat-button class=\"header-button\" (click)=\"emitClick('technologies')\" fxFlex=\"100%\" fxFlex.gt-sm=\"30%\" fxFlex.gt-xs=\"70%\"\r\n        fxLayoutAlign=\"center center\">Technologies</button>\r\n    </div>\r\n    <button mat-button [matMenuTriggerFor]=\"menu\" fxShow=\"true\" fxShow.gt-sm=\"false\">\r\n      <mat-icon class=\"icon\">clear_all</mat-icon>\r\n    </button>\r\n    <mat-menu #menu=\"matMenu\">\r\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('mobile-competence')\">Mobile Competence\r\n      </button>\r\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('about-us')\">About us\r\n      </button>\r\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('team')\">Team</button>\r\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('technologies')\">Technologies</button>\r\n    </mat-menu>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>"
+module.exports = "<mat-toolbar color=\"primary\">\n  <mat-toolbar-row>\n    <div (click)=\"emitClick('mobile-competence')\" fxLayoutAlign=\"center center\">\n      <span class=\"logo\">\n        <img src=\"assets/img/icon-body.png\" />\n      </span>\n    </div>\n    <span class=\"spacer\"></span>\n    <span class=\"spacer\"></span>\n    <div class=\"references\" fxLayout=\"row\" fxLayoutAlign=\"center center\" fxShow=\"false\" fxShow.gt-sm=\"true\">\n      <button mat-button class=\"header-button\" (click)=\"emitClick('about-us')\" fxFlex=\"100%\" fxFlex.gt-sm=\"30%\" fxFlex.gt-xs=\"70%\"\n        fxLayoutAlign=\"center center\">About us</button>\n      <button mat-button class=\"header-button\" (click)=\"emitClick('team')\" fxFlex=\"100%\" fxFlex.gt-sm=\"30%\" fxFlex.gt-xs=\"70%\"\n        fxLayoutAlign=\"center center\">Our team</button>\n      <button mat-button class=\"header-button\" (click)=\"emitClick('technologies')\" fxFlex=\"100%\" fxFlex.gt-sm=\"30%\" fxFlex.gt-xs=\"70%\"\n        fxLayoutAlign=\"center center\">Technologies</button>\n    </div>\n    <button mat-button [matMenuTriggerFor]=\"menu\" fxShow=\"true\" fxShow.gt-sm=\"false\">\n      <mat-icon class=\"icon\">clear_all</mat-icon>\n    </button>\n    <mat-menu #menu=\"matMenu\">\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('mobile-competence')\">Mobile Competence\n      </button>\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('about-us')\">About us\n      </button>\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('team')\">Team</button>\n      <button mat-menu-item class=\"menu-button\" (click)=\"emitClick('technologies')\">Technologies</button>\n    </mat-menu>\n  </mat-toolbar-row>\n</mat-toolbar>"
 
 /***/ }),
 
@@ -392,7 +394,7 @@ module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes inside {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%); }\n  75% {\n    opacity: 0.1; }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%); } }\n\n@keyframes inside {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%); }\n  75% {\n    opacity: 0.1; }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%); } }\n\n.logo {\n  display: flex; }\n\n.logo img {\n    height: 40px; }\n\n.spacer {\n  flex: 1 1 auto; }\n\n.references {\n  height: 100%; }\n\n.references button {\n    font-size: 18px; }\n\n.references .header-button {\n    color: white;\n    padding: 0px 30px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-weight: bold;\n    height: 100%; }\n\n.mat-toolbar {\n  color: white;\n  background-color: #0066a1d7;\n  position: fixed;\n  z-index: 2; }\n\n.icon {\n  padding: 0 10px; }\n\n.menu-button {\n  color: #0066a1;\n  font-weight: bold;\n  text-decoration: none;\n  text-transform: uppercase;\n  background-color: white; }\n\n@media (min-width: 992px) {\n  .logo img {\n    height: 50px; } }\n"
+module.exports = "@-webkit-keyframes inside {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%); }\n  75% {\n    opacity: 0.1; }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%); } }\n\n@keyframes inside {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%); }\n  75% {\n    opacity: 0.1; }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0%);\n            transform: translateY(0%); } }\n\n.logo {\n  display: flex;\n  cursor: pointer; }\n\n.logo img {\n    height: 40px; }\n\n.spacer {\n  flex: 1 1 auto; }\n\n.references {\n  height: 100%; }\n\n.references button {\n    font-size: 18px; }\n\n.references .header-button {\n    color: white;\n    padding: 0px 30px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-weight: bold;\n    height: 100%; }\n\n.mat-toolbar {\n  color: white;\n  background-color: #0066a1d7;\n  position: fixed;\n  z-index: 2; }\n\n.icon {\n  padding: 0 10px; }\n\n.menu-button {\n  color: #0066a1;\n  font-weight: bold;\n  text-decoration: none;\n  text-transform: uppercase;\n  background-color: white; }\n\n@media (min-width: 992px) {\n  .logo img {\n    height: 50px; } }\n"
 
 /***/ }),
 
@@ -485,7 +487,7 @@ var MobileCompetenceComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mobile-competence\" fxFlex fxLayout=\"column\" fxLayoutAlign=\"center center\" inViewport>\r\n  <div class=\"mobile-competence-letter\" fxFlex fxLayout=\"row\" fxLayoutAlign=\"center center\">\r\n    <span>SERVER TEAM</span>\r\n  </div>\r\n  <div class=\"mobile-image-wrapper\" fxFlex fxLayout=\"row\" fxLayoutAlign=\"center center\">\r\n    <div class=\"mobile-competence-image\"></div>\r\n  </div>\r\n  <div class=\"mobile-competence-letter\" fxFlex fxLayout=\"row\" fxLayoutAlign=\"center end\">\r\n    <span>Madrid - Barcelona - Cáceres</span>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"mobile-competence\" fxFlex fxLayout=\"column\" fxLayoutAlign=\"center center\" inViewport>\n  <div class=\"mobile-competence-letter\" fxFlex fxLayout=\"row\" fxLayoutAlign=\"center center\">\n    <span>SERVER TEAM</span>\n  </div>\n  <div class=\"mobile-image-wrapper\" fxFlex fxLayout=\"row\" fxLayoutAlign=\"center center\">\n    <div class=\"mobile-competence-image\"></div>\n  </div>\n  <div class=\"mobile-competence-letter\" fxFlex fxLayout=\"row\" fxLayoutAlign=\"center end\">\n    <span>Madrid - Barcelona - Cáceres</span>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -507,7 +509,7 @@ module.exports = ".mobile-competence {\n  background-image: url('photo3.jpg');\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"team\" fxLayout=\"row wrap\" fxLayout.xs=\"column\" inViewport>\r\n  <div class=\"team-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center start\">Our team</div>\r\n  <mcc-team-member *ngFor=\"let member of team\" [member]=\"member\" fxFlex=\"33%\" fxLayout=\"row\" fxLayoutAlign=\"center start\"></mcc-team-member>\r\n</div>"
+module.exports = "<div id=\"team\" fxLayout=\"row wrap\" fxLayout.xs=\"column\" inViewport>\n  <div class=\"team-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center start\">Our team</div>\n  <mcc-team-member *ngFor=\"let member of team\" [member]=\"member\" fxFlex=\"33%\" fxLayout=\"row\" fxLayoutAlign=\"center start\"></mcc-team-member>\n</div>"
 
 /***/ }),
 
@@ -571,7 +573,7 @@ var TeamListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"team-member\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxFlex=\"100%\" inViewport [debounce]=\"0\">\r\n  <div class=\"team-member-avatar\" [style.background-image]=\"'url('+member.photo+')'\"></div>\r\n  <div class=\"team-member-name\"> {{ member.name }} </div>\r\n  <div class=\"team-member-job-position\"> {{ member.position }} </div>\r\n  <p class=\"team-member-description\"> {{ member.description }} </p>\r\n  <div fxLayout=\"row\" fxLayoutAlign=\"center center\" fxFlex=\"100%\">\r\n    <div class=\"team-member-icon-list\" *ngFor=\"let social of member.social\">\r\n      <a href=\"{{ social.url }}\">\r\n        <i class=\"{{ social.icon }} icon-link\"></i>\r\n      </a>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"team-member\" fxLayout=\"column\" fxLayoutAlign=\"center center\" fxFlex=\"100%\" inViewport [debounce]=\"0\">\n  <div class=\"team-member-avatar\" [style.background-image]=\"'url('+member.photo+')'\"></div>\n  <div class=\"team-member-name\"> {{ member.name }} </div>\n  <div class=\"team-member-job-position\"> {{ member.position }} </div>\n  <p class=\"team-member-description\"> {{ member.description }} </p>\n  <div fxLayout=\"row\" fxLayoutAlign=\"center center\" fxFlex=\"100%\">\n    <div class=\"team-member-icon-list\" *ngFor=\"let social of member.social\">\n      <a target=\"_blank\" href=\"{{ social.url }}\">\n        <i class=\"{{ social.icon }} icon-link\"></i>\n      </a>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -635,7 +637,7 @@ var TeamMemberComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"technologies\" fxLayout=\"row wrap\" fxLayout.xs=\"column\" fxLayoutAlign=\"center center\">\r\n  <div class=\"technologies-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center start\">Technologies</div>\r\n  <div class=\"technologies-group\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\" fxLayout.gt-sm=\"row wrap\" fxLayout=\"column\"\r\n    fxLayoutAlign=\"center center\">\r\n    <div class=\"technologies-group-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center center\">FRONTEND</div>\r\n    <div *ngFor=\"let frontTech of technologies.frontend\" class=\"technologies-item\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\"\r\n      fxLayoutAlign=\"center center\">\r\n      <div class=\"technologies-item-image\" fxLayoutAlign=\"center center\">\r\n        <div class=\"technology-image-wrapper\">\r\n          <div class=\"logo-wrapper\" [style.background-image]=\"'url('+frontTech.logo+')'\"></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"technologies-group\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\" fxLayout.gt-sm=\"row wrap\" fxLayout=\"column\"\r\n    fxLayoutAlign=\"center center\">\r\n    <div class=\"technologies-group-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center center\">BACKEND</div>\r\n    <div *ngFor=\"let backTech of technologies.backend\" class=\"technologies-item\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\"\r\n      fxLayoutAlign=\"center center\">\r\n      <div class=\"technologies-item-image\" fxLayoutAlign=\"center center\">\r\n        <div class=\"technology-image-wrapper\">\r\n          <div class=\"logo-wrapper\" [style.background-image]=\"'url('+backTech.logo+')'\"></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"technologies\" fxLayout=\"row wrap\" fxLayout.xs=\"column\" fxLayoutAlign=\"center center\">\n  <div class=\"technologies-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center start\">Technologies</div>\n  <div class=\"technologies-group\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\" fxLayout.gt-sm=\"row wrap\" fxLayout=\"column\"\n    fxLayoutAlign=\"center center\">\n    <div class=\"technologies-group-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center center\">FRONTEND</div>\n    <a target=\"_blank\" href=\"{{frontTech.link}}\" *ngFor=\"let frontTech of technologies.frontend\" class=\"technologies-item\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\"\n      fxLayoutAlign=\"center center\">\n      <div class=\"technologies-item-image\" fxLayoutAlign=\"center center\">\n        <div class=\"technology-image-wrapper\">\n          <div matTooltip=\"{{frontTech.tooltip}}\" class=\"logo-wrapper\" [style.background-image]=\"'url('+frontTech.logo+')'\"></div>\n        </div>\n      </div>\n    </a>\n  </div>\n  <div class=\"technologies-group\" fxFlex=\"100%\" fxFlex.gt-sm=\"50%\" fxLayout.gt-sm=\"row wrap\" fxLayout=\"column\"\n    fxLayoutAlign=\"center center\">\n    <div class=\"technologies-group-title\" fxFlex=\"100%\" fxLayout=\"column\" fxLayoutAlign=\"center center\">BACKEND</div>\n    <a target=\"_blank\" href=\"{{backTech.link}}\" *ngFor=\"let backTech of technologies.backend\" class=\"technologies-item\" fxFlex=\"100%\"\n      fxFlex.gt-sm=\"50%\" fxLayoutAlign=\"center center\">\n      <div class=\"technologies-item-image\" fxLayoutAlign=\"center center\">\n        <div class=\"technology-image-wrapper\">\n          <div matTooltip=\"{{backTech.tooltip}}\" class=\"logo-wrapper\" [style.background-image]=\"'url('+backTech.logo+')'\"></div>\n        </div>\n      </div>\n    </a>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -776,6 +778,34 @@ var TeamMembers = [
         ]
     },
     {
+        name: 'Ana María Castaño Díaz',
+        photo: 'assets/img/members/AnaMariaCastaño.png',
+        description: 'My richness is life',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/AnaaMaria25'
+            }
+        ]
+    },
+    {
+        name: 'Antonio Fiñana Sanchez',
+        photo: 'assets/img/members/AntonioFinana.jpg',
+        description: 'Nice to meet myself',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/antonio-fi%C3%B1ana-30a40b49/?originalSubdomain=es'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/afinana'
+            }
+        ]
+    },
+    {
         name: 'Cristina Figueres Nuñez',
         photo: 'assets/img/members/CristinaFigueres.jpg',
         description: ' I am too old for this shit... ',
@@ -808,7 +838,7 @@ var TeamMembers = [
         ]
     },
     {
-        name: 'Eric Alvarez Chinchilla',
+        name: 'Eric Álvarez Chinchilla',
         photo: 'assets/img/members/EricAlvarez.jpg',
         description: '#nofilter #frontend #developer #worldline',
         position: 'DEVELOPER',
@@ -852,6 +882,22 @@ var TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/jordiescudero'
+            }
+        ]
+    },
+    {
+        name: 'Jorge Oíz Acosta',
+        photo: 'assets/img/members/JorgeOiz.jpg',
+        description: 'To change is to progress',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/jorge-oiz-acosta-80a34b57/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/JorgeOiz'
             }
         ]
     },
@@ -966,37 +1012,53 @@ var Technologies = {
     frontend: [
         {
             name: 'angular',
-            logo: 'assets/img/logos/angular.svg'
+            logo: 'assets/img/logos/angular.svg',
+            tooltip: 'Angular',
+            link: 'https://angular.io/'
         },
         {
             name: 'ionic',
-            logo: 'assets/img/logos/ionic.svg'
+            logo: 'assets/img/logos/ionic.svg',
+            tooltip: 'Ionic',
+            link: 'https://ionicframework.com/'
         },
         {
             name: 'sass',
-            logo: 'assets/img/logos/sass.svg'
+            logo: 'assets/img/logos/sass.svg',
+            tooltip: 'SASS',
+            link: 'https://sass-lang.com/'
         },
         {
             name: 'cordova',
-            logo: 'assets/img/logos/cordova.png'
+            logo: 'assets/img/logos/cordova.png',
+            tooltip: 'Cordova',
+            link: 'https://cordova.apache.org/'
         }
     ],
     backend: [
         {
             name: 'node',
-            logo: 'assets/img/logos/node.png'
+            logo: 'assets/img/logos/node.png',
+            tooltip: 'Node',
+            link: 'https://nodejs.org/en/'
         },
         {
             name: 'docker',
-            logo: 'assets/img/logos/docker.svg'
+            logo: 'assets/img/logos/docker.svg',
+            tooltip: 'Docker',
+            link: 'https://www.docker.com/'
         },
         {
             name: 'mongodb',
-            logo: 'assets/img/logos/mongodb.svg'
+            logo: 'assets/img/logos/mongodb.svg',
+            tooltip: 'Mongo DB',
+            link: 'https://www.mongodb.com/en'
         },
         {
             name: 'java',
-            logo: 'assets/img/logos/java.svg'
+            logo: 'assets/img/logos/java.svg',
+            tooltip: 'Java',
+            link: 'https://java.com/en/'
         }
     ]
 };
@@ -1064,7 +1126,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Workspace\frontend-backend-server-team\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/killianperearuiz/workspace/frontend-backend-server-team/src/main.ts */"./src/main.ts");
 
 
 /***/ })

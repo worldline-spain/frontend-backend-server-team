@@ -74,6 +74,34 @@ export const TeamMembers = [
         ]
     },
     {
+        name: 'Ana María Castaño Díaz',
+        photo: 'assets/img/members/AnaMariaCastaño.png',
+        description: 'My richness is life',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/AnaaMaria25'
+            }
+        ]
+    },
+    {
+        name: 'Antonio Fiñana Sanchez',
+        photo: 'assets/img/members/AntonioFinana.jpg',
+        description: 'Nice to meet myself',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/antonio-fi%C3%B1ana-30a40b49/?originalSubdomain=es'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/afinana'
+            }
+        ]
+    },
+    {
         name: 'Cristina Figueres Nuñez',
         photo: 'assets/img/members/CristinaFigueres.jpg',
         description: ' I am too old for this shit... ',
@@ -106,7 +134,7 @@ export const TeamMembers = [
         ]
     },
     {
-        name: 'Eric Alvarez Chinchilla',
+        name: 'Eric Álvarez Chinchilla',
         photo: 'assets/img/members/EricAlvarez.jpg',
         description: '#nofilter #frontend #developer #worldline',
         position: 'DEVELOPER',
@@ -150,6 +178,22 @@ export const TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/jordiescudero'
+            }
+        ]
+    },
+    {
+        name: 'Jorge Oíz Acosta',
+        photo: 'assets/img/members/JorgeOiz.jpg',
+        description: 'To change is to progress',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/jorge-oiz-acosta-80a34b57/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/JorgeOiz'
             }
         ]
     },

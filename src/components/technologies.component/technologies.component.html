@@ -3,25 +3,25 @@
   <div class="technologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column"
     fxLayoutAlign="center center">
     <div class="technologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">FRONTEND</div>
-    <div *ngFor="let frontTech of technologies.frontend" class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%"
+    <a target="_blank" href="{{frontTech.link}}" *ngFor="let frontTech of technologies.frontend" class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%"
       fxLayoutAlign="center center">
       <div class="technologies-item-image" fxLayoutAlign="center center">
         <div class="technology-image-wrapper">
-          <div class="logo-wrapper" [style.background-image]="'url('+frontTech.logo+')'"></div>
+          <div matTooltip="{{frontTech.tooltip}}" class="logo-wrapper" [style.background-image]="'url('+frontTech.logo+')'"></div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
   <div class="technologies-group" fxFlex="100%" fxFlex.gt-sm="50%" fxLayout.gt-sm="row wrap" fxLayout="column"
     fxLayoutAlign="center center">
     <div class="technologies-group-title" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">BACKEND</div>
-    <div *ngFor="let backTech of technologies.backend" class="technologies-item" fxFlex="100%" fxFlex.gt-sm="50%"
-      fxLayoutAlign="center center">
+    <a target="_blank" href="{{backTech.link}}" *ngFor="let backTech of technologies.backend" class="technologies-item" fxFlex="100%"
+      fxFlex.gt-sm="50%" fxLayoutAlign="center center">
       <div class="technologies-item-image" fxLayoutAlign="center center">
         <div class="technology-image-wrapper">
-          <div class="logo-wrapper" [style.background-image]="'url('+backTech.logo+')'"></div>
+          <div matTooltip="{{backTech.tooltip}}" class="logo-wrapper" [style.background-image]="'url('+backTech.logo+')'"></div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </div>

@@ -18,6 +18,7 @@ import {
   MatTabsModule,
   MatGridListModule,
   MatInputModule,
+  MatTooltipModule,
   MatSlideToggleModule,
 } from '@angular/material';
 
@@ -40,7 +41,8 @@ import {
     MatTabsModule,
     MatGridListModule,
     MatInputModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatTooltipModule
   ],
   exports: [
     MatButtonModule,
@@ -60,6 +62,7 @@ import {
     MatTabsModule,
     MatGridListModule,
     MatInputModule,
+    MatTooltipModule,
     MatSlideToggleModule
   ]
 })

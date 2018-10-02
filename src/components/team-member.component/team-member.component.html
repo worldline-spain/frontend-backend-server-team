@@ -5,7 +5,7 @@
   <p class="team-member-description"> {{ member.description }} </p>
   <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%">
     <div class="team-member-icon-list" *ngFor="let social of member.social">
-      <a href="{{ social.url }}">
+      <a target="_blank" href="{{ social.url }}">
         <i class="{{ social.icon }} icon-link"></i>
       </a>
     </div>
