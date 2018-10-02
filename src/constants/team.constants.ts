@@ -75,7 +75,7 @@ export const TeamMembers = [
     },
     {
         name: 'Ana María Castaño Díaz',
-        photo: 'assets/img/members/AnaMariaCastaño.png',
+        photo: 'assets/img/members/AnaMariaCastano.png',
         description: 'My richness is life',
         position: 'DEVELOPER',
         social: [
