@@ -74,32 +74,32 @@ export const TeamMembers = [
         ]
     },
     {
-        name: 'Ana María Castaño Díaz',
-        photo: 'assets/img/members/AnaMariaCastano.png',
-        description: 'My richness is life',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/AnaaMaria25'
-            }
-        ]
+      name: 'Ana María Castaño Díaz',
+      photo: 'assets/img/members/AnaMariaCastano.png',
+      description: 'My richness is life',
+      position: 'DEVELOPER',
+      social: [
+        {
+          icon: 'fab fa-github',
+          url: 'https://github.com/AnaaMaria25'
+        }
+      ]
     },
     {
-        name: 'Antonio Fiñana Sanchez',
-        photo: 'assets/img/members/AntonioFinana.jpg',
-        description: 'Nice to meet myself',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/antonio-fi%C3%B1ana-30a40b49/?originalSubdomain=es'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/afinana'
-            }
-        ]
+      name: 'Andres Iglesias Perez',
+      photo: 'assets/img/members/AndresIglesias.jpg',
+      description: 'There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.',
+      position: 'DEVELOPER',
+      social: [
+        {
+          icon: 'fab fa-linkedin-in',
+          url: 'https://www.linkedin.com/in/andresiglesiasperez/'
+        },
+        {
+          icon: 'fab fa-github',
+          url: 'https://github.com/malarres'
+        }
+      ]
     },
     {
         name: 'Cristina Figueres Nuñez',
@@ -134,6 +134,34 @@ export const TeamMembers = [
         ]
     },
     {
+    name: 'David Castro Fornos',
+    photo: 'assets/img/members/DavidCastro.jpg',
+    description: 'Yo k se no soy 100tifico xddd',
+    position: 'DEVELOPER',
+    social: [
+      {
+        icon: 'fab fa-linkedin-in',
+        url: 'https://www.linkedin.com/in/deivieb/'
+      }
+    ]
+    },
+    {
+      name: 'Enrique Pastor Cisneros',
+      photo: 'assets/img/members/EnriquePastor.jpg',
+      description: 'La respuesta es 42',
+      position: 'DEVELOPER',
+      social: [
+        {
+          icon: 'fab fa-linkedin-in',
+          url: 'https://www.linkedin.com/in/enrique-pastor-cisneros-36571312a/?originalSubdomain=es'
+        },
+        {
+          icon: 'fab fa-github',
+          url: 'https://github.com/epastorc'
+        }
+      ]
+    },
+    {
         name: 'Eric Álvarez Chinchilla',
         photo: 'assets/img/members/EricAlvarez.jpg',
         description: '#nofilter #frontend #developer #worldline',
@@ -148,6 +176,22 @@ export const TeamMembers = [
                 url: 'https://github.com/ealch'
             }
         ]
+    },
+    {
+      name: 'Eric Torres Perramon',
+      photo: 'assets/img/members/EricTorres.png',
+      description: 'Why i\'m still here? just to suffer?',
+      position: 'DEVELOPER',
+      social: [
+        {
+          icon: 'fab fa-linkedin-in',
+          url: 'https://www.linkedin.com/in/etorper/'
+        },
+        {
+          icon: 'fab fa-github',
+          url: 'https://github.com/Erick9Thor'
+        }
+      ]
     },
     {
         name: 'Jairo Costa Barriga',
@@ -258,20 +302,20 @@ export const TeamMembers = [
         ]
     },
     {
-        name: 'Sergio Calero Robles',
-        photo: 'assets/img/members/SergioCalero.jpg',
-        description: '-It is not possible! -No, it is necessary',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/sergio-calero-robles/'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/RedParabola'
-            }
-        ]
+      name: 'Sergi Falcón Xarau',
+      photo: 'assets/img/members/SergiFalcón.png',
+      description: '( ͡° ͜ʖ ͡°)',
+      position: 'DEVELOPER',
+      social: [
+        {
+          icon: 'fab fa-linkedin-in',
+          url: 'https://www.linkedin.com/in/sergifalcon/'
+        },
+        {
+          icon: 'fab fa-github',
+          url: 'https://github.com/Sergifx'
+        }
+      ]
     },
     {
         name: 'Xavier Cases Camats',
