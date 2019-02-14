@@ -2,11 +2,15 @@ import { MemberModel } from '../models/member.model';
 
 export const TeamMembers = [
     {
-        name: 'Adrian Borrego Martinez',
+        name: 'Adrián Borrego Martínez',
         photo: 'assets/img/members/AdrianBorrego.png',
         description: 'Haters gonna hate',
         position: 'DEVELOPER',
         social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/adri%C3%A1n-borrego-mart%C3%ADnez-733346177/'
+            },
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/adryy5'
@@ -33,7 +37,7 @@ export const TeamMembers = [
         name: 'Alejandro Rivas Moreira',
         photo: 'assets/img/members/AlejandroRivas.jpg',
         description: 'It is over anakin, I have the high ground',
-        position: 'DEVELOPER',
+        position: 'SCHOLARSHIP HOLDER',
         social: [
             {
                 icon: 'fab fa-github',
@@ -74,32 +78,32 @@ export const TeamMembers = [
         ]
     },
     {
-      name: 'Ana María Castaño Díaz',
-      photo: 'assets/img/members/AnaMariaCastano.png',
-      description: 'My richness is life',
-      position: 'DEVELOPER',
-      social: [
-        {
-          icon: 'fab fa-github',
-          url: 'https://github.com/AnaaMaria25'
-        }
-      ]
+        name: 'Ana María Castaño Díaz',
+        photo: 'assets/img/members/AnaMariaCastano.png',
+        description: 'My richness is life',
+        position: 'SCHOLARSHIP HOLDER',
+        social: [
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/AnaaMaria25'
+            }
+        ]
     },
     {
-      name: 'Andres Iglesias Perez',
-      photo: 'assets/img/members/AndresIglesias.jpg',
-      description: 'There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.',
-      position: 'DEVELOPER',
-      social: [
-        {
-          icon: 'fab fa-linkedin-in',
-          url: 'https://www.linkedin.com/in/andresiglesiasperez/'
-        },
-        {
-          icon: 'fab fa-github',
-          url: 'https://github.com/malarres'
-        }
-      ]
+        name: 'Andres Iglesias Perez',
+        photo: 'assets/img/members/AndresIglesias.jpg',
+        description: 'There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/andresiglesiasperez/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/malarres'
+            }
+        ]
     },
     {
         name: 'Cristina Figueres Nuñez',
@@ -134,32 +138,32 @@ export const TeamMembers = [
         ]
     },
     {
-    name: 'David Castro Fornos',
-    photo: 'assets/img/members/DavidCastro.jpg',
-    description: 'Yo k se no soy 100tifico xddd',
-    position: 'DEVELOPER',
-    social: [
-      {
-        icon: 'fab fa-linkedin-in',
-        url: 'https://www.linkedin.com/in/deivieb/'
-      }
-    ]
+        name: 'David Castro Fornos',
+        photo: 'assets/img/members/DavidCastro.jpg',
+        description: 'Yo k se no soy 100tifico xddd',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/deivieb/'
+            }
+        ]
     },
     {
-      name: 'Enrique Pastor Cisneros',
-      photo: 'assets/img/members/EnriquePastor.jpg',
-      description: 'La respuesta es 42',
-      position: 'DEVELOPER',
-      social: [
-        {
-          icon: 'fab fa-linkedin-in',
-          url: 'https://www.linkedin.com/in/enrique-pastor-cisneros-36571312a/?originalSubdomain=es'
-        },
-        {
-          icon: 'fab fa-github',
-          url: 'https://github.com/epastorc'
-        }
-      ]
+        name: 'Enrique Pastor Cisneros',
+        photo: 'assets/img/members/EnriquePastor.jpg',
+        description: 'La respuesta es 42',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/enrique-pastor-cisneros-36571312a/?originalSubdomain=es'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/epastorc'
+            }
+        ]
     },
     {
         name: 'Eric Álvarez Chinchilla',
@@ -178,26 +182,26 @@ export const TeamMembers = [
         ]
     },
     {
-      name: 'Eric Torres Perramon',
-      photo: 'assets/img/members/EricTorres.png',
-      description: 'Why i\'m still here? just to suffer?',
-      position: 'DEVELOPER',
-      social: [
-        {
-          icon: 'fab fa-linkedin-in',
-          url: 'https://www.linkedin.com/in/etorper/'
-        },
-        {
-          icon: 'fab fa-github',
-          url: 'https://github.com/Erick9Thor'
-        }
-      ]
+        name: 'Eric Torres Perramon',
+        photo: 'assets/img/members/EricTorres.png',
+        description: 'Why i\'m still here? just to suffer?',
+        position: 'SCHOLARSHIP HOLDER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/etorper/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/Erick9Thor'
+            }
+        ]
     },
     {
         name: 'Jairo Costa Barriga',
         photo: 'assets/img/members/JairoCosta.jpg',
         description: 'Magic is the science we do not understand yet',
-        position: 'SCHOLARSHIP HOLDER',
+        position: 'DEVELOPER',
         social: [
             {
                 icon: 'fab fa-linkedin-in',
@@ -302,20 +306,20 @@ export const TeamMembers = [
         ]
     },
     {
-      name: 'Sergi Falcón Xarau',
-      photo: 'assets/img/members/SergiFalcón.png',
-      description: '( ͡° ͜ʖ ͡°)',
-      position: 'DEVELOPER',
-      social: [
-        {
-          icon: 'fab fa-linkedin-in',
-          url: 'https://www.linkedin.com/in/sergifalcon/'
-        },
-        {
-          icon: 'fab fa-github',
-          url: 'https://github.com/Sergifx'
-        }
-      ]
+        name: 'Sergi Falcón Xarau',
+        photo: 'assets/img/members/SergiFalcón.png',
+        description: '( ͡° ͜ʖ ͡°)',
+        position: 'SCHOLARSHIP HOLDER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/sergifalcon/'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/Sergifx'
+            }
+        ]
     },
     {
         name: 'Xavier Cases Camats',
