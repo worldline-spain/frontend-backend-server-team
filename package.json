@@ -7,28 +7,11 @@
     "email": "dl-wl-mcc-server@worldline.com"
   },
   "contributors": [
-    "Adrian Borrego Martinez",
-    "Alberto Iglesias Gonzalo",
     "Alejandro Rivas Moreira",
-    "Alejandro Verbo Macias",
-    "Ana Avilés Herrero",
-    "Ana María Castaño Díaz",
-    "Andres Iglesias Perez",
-    "Cristina Figueres Nuñez",
-    "Dani Bautista Miralles",
-    "David Castro Fornos",
-    "Enrique Pastor Cisneros",
     "Eric Alvarez Chinchilla",
-    "Eric Torres Perramon",
-    "Jairo Costa Barriga",
     "Jordi Escudero Subirana",
-    "Jorge Oíz Acosta",
-    "Jose Luis Pleguezuelos Aguilera",
     "Juan Belmonte Rodríguez",
-    "Killian Perea Ruiz",
-    "Raul Fernandez Garcia",
-    "Sergi Falcón Xarau",
-    "Xavier Cases Camats"
+    "Killian Perea Ruiz"
   ],
   "license": "MIT",
   "scripts": {

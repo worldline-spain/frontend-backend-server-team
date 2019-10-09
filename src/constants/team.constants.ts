@@ -34,18 +34,6 @@ export const TeamMembers = [
         ]
     },
     {
-        name: 'Alejandro Rivas Moreira',
-        photo: 'assets/img/members/AlejandroRivas.jpg',
-        description: 'It is over anakin, I have the high ground',
-        position: 'SCHOLARSHIP HOLDER',
-        social: [
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/AlexHikari/'
-            }
-        ]
-    },
-    {
         name: 'Alejandro Verbo Macias',
         photo: 'assets/img/members/AlejandroVerbo.jpg',
         description: 'There are two rules for success: 1) Never say everything you know',
@@ -86,22 +74,6 @@ export const TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/AnaaMaria25'
-            }
-        ]
-    },
-    {
-        name: 'Andres Iglesias Perez',
-        photo: 'assets/img/members/AndresIglesias.jpg',
-        description: 'There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/andresiglesiasperez/'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/malarres'
             }
         ]
     },
@@ -178,38 +150,6 @@ export const TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/ealch'
-            }
-        ]
-    },
-    {
-        name: 'Eric Torres Perramon',
-        photo: 'assets/img/members/EricTorres.png',
-        description: 'Why i\'m still here? just to suffer?',
-        position: 'SCHOLARSHIP HOLDER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/etorper/'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/Erick9Thor'
-            }
-        ]
-    },
-    {
-        name: 'Jairo Costa Barriga',
-        photo: 'assets/img/members/JairoCosta.jpg',
-        description: 'Magic is the science we do not understand yet',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/jairocostaes'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/soyJairoCosta'
             }
         ]
     },
@@ -302,22 +242,6 @@ export const TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/raul97fernandez'
-            }
-        ]
-    },
-    {
-        name: 'Sergi Falcón Xarau',
-        photo: 'assets/img/members/SergiFalcón.png',
-        description: '( ͡° ͜ʖ ͡°)',
-        position: 'SCHOLARSHIP HOLDER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/sergifalcon/'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/Sergifx'
             }
         ]
     },
