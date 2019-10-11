@@ -203,7 +203,7 @@ export const TeamMembers = [
         name: 'Jose Manuel Agúndez Garcia',
         photo: 'assets/img/members/Placeholder.jpg',
         description: '...',
-        position: 'DEVELOPER',
+        position: 'SCHOLARSHIP HOLDER',
         social: []
     },
     {
