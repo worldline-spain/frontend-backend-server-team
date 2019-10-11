@@ -69,18 +69,25 @@ export const TeamMembers = [
         name: 'Ana María Castaño Díaz',
         photo: 'assets/img/members/AnaMariaCastano.png',
         description: 'My richness is life',
-        position: 'SCHOLARSHIP HOLDER',
+        position: 'DEVELOPER',
         social: [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/AnaaMaria25'
             }
         ]
+    },    
+    {
+        name: 'Carmen Carrero Hurtado',
+        photo: 'assets/img/members/CarmenCarrero.jpg',
+        description: 'code like a girl;',
+        position: 'SCHOLARSHIP HOLDER',
+        social: []
     },
     {
         name: 'Cristina Figueres Nuñez',
         photo: 'assets/img/members/CristinaFigueres.jpg',
-        description: ' I am too old for this shit... ',
+        description: 'I am too old for this shit...',
         position: 'DEVELOPER',
         social: [
             {
@@ -106,18 +113,6 @@ export const TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/Dabami'
-            }
-        ]
-    },
-    {
-        name: 'David Castro Fornos',
-        photo: 'assets/img/members/DavidCastro.jpg',
-        description: 'Yo k se no soy 100tifico xddd',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/deivieb/'
             }
         ]
     },
@@ -152,6 +147,13 @@ export const TeamMembers = [
                 url: 'https://github.com/ealch'
             }
         ]
+    },
+    {
+        name: 'Guillermo Lasaosa Garcia',
+        photo: 'assets/img/members/Placeholder.jpg',
+        description: '...',
+        position: 'DEVELOPER',
+        social: []
     },
     {
         name: 'Jordi Escudero Subirana',
@@ -198,6 +200,13 @@ export const TeamMembers = [
         ]
     },
     {
+        name: 'Jose Manuel Agúndez Garcia',
+        photo: 'assets/img/members/Placeholder.jpg',
+        description: '...',
+        position: 'DEVELOPER',
+        social: []
+    },
+    {
         name: 'Juan Belmonte Rodríguez',
         photo: 'assets/img/members/JuanBelmonte.jpg',
         description: '75% water',
@@ -210,6 +219,18 @@ export const TeamMembers = [
             {
                 icon: 'fab fa-github',
                 url: 'https://github.com/jbelmonte'
+            }
+        ]
+    },
+    {
+        name: 'Juan Manuel Lopez Diez',
+        photo: 'assets/img/members/JuanManuelLopez.jpg',
+        description: 'This is SCRUM!',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://es.linkedin.com/in/juan-manuel-lopez-diez-5a1b4841'
             }
         ]
     },
@@ -230,10 +251,38 @@ export const TeamMembers = [
         ]
     },
     {
+        name: 'Leandro Espinosa García',
+        photo: 'assets/img/members/LeandroEspinosa.jpg',
+        description: 'If opportunity doesn’t knock, build a door',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://es.linkedin.com/in/leandroeg'
+            },
+            {
+                icon: 'fab fa-github',
+                url: 'https://github.com/leandroeg'
+            }
+        ]
+    },
+    {
+        name: 'Purificación Hernández Barroso',
+        photo: 'assets/img/members/PurificacionHernandez.jpg',
+        description: 'Que la fuerza te acompañe',
+        position: 'DEVELOPER',
+        social: [
+            {
+                icon: 'fab fa-linkedin-in',
+                url: 'https://www.linkedin.com/in/purificacionhernandezb/'
+            }
+        ]
+    },
+    {
         name: 'Raul Fernandez Garcia',
         photo: 'assets/img/members/RaulFernandez.jpg',
         description: 'Be prepared',
-        position: 'SCHOLARSHIP HOLDER',
+        position: 'DEVELOPER',
         social: [
             {
                 icon: 'fab fa-linkedin-in',
