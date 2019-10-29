@@ -237,7 +237,7 @@ export const TeamMembers = [
     {
         name: 'Killian Perea Ruiz',
         photo: 'assets/img/members/KillianPerea.jpg',
-        description: 'Do not be another brick in the wall',
+        description: 'Mr. Escudero I don\'t feel so good',
         position: 'DEVELOPER',
         social: [
             {
