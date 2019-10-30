@@ -235,22 +235,6 @@ export const TeamMembers = [
         ]
     },
     {
-        name: 'Killian Perea Ruiz',
-        photo: 'assets/img/members/KillianPerea.jpg',
-        description: 'Mr. Escudero I don\'t feel so good',
-        position: 'DEVELOPER',
-        social: [
-            {
-                icon: 'fab fa-linkedin-in',
-                url: 'https://www.linkedin.com/in/killianperea/'
-            },
-            {
-                icon: 'fab fa-github',
-                url: 'https://github.com/killianperea'
-            }
-        ]
-    },
-    {
         name: 'Leandro Espinosa García',
         photo: 'assets/img/members/LeandroEspinosa.jpg',
         description: 'If opportunity doesn’t knock, build a door',
